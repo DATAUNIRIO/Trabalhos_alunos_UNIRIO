@@ -1,0 +1,136 @@
+body {
+background-color: #d8f8ff;
+}
+
+p {
+    font-size: 20px;
+}
+
+#menu {
+	height:200px;
+	
+}
+
+#menu a {
+	text-decoration:none;
+	color:#FFFFFF;
+	text-align:center;
+	padding:5px;
+	font-variant:small-caps;
+	font-weight:bold;
+	letter-spacing:1px;
+	
+}
+
+#menu li {
+	list-style-type:none;
+	display:inline-flex;
+	font-size:60%;
+	
+}
+/*
+#menu li a img {
+	height:50px;
+	
+}
+
+.menu-bar {
+	width:10.8%;
+	position:relative;
+}
+*/
+
+#menu1 {
+	height:150px;
+	width:150px;
+	background-color:#8F8f4A;
+	top:150px;
+
+}
+#menu1:hover {
+	background-color:#D1D16C;
+}
+
+#menu2 {
+	height:150px;
+	width:150px;
+	background-color:#6D904B;
+	top:100px;
+	margin: auto;
+}
+#menu2:hover {
+	background-color:#9FD26D;
+}
+
+
+#menu3 {
+	height:150px;
+	width:150px;
+	background-color:#468C47;
+	top:100px;
+	margin: auto;
+}
+#menu3:hover {
+	background-color:#66CD68;
+}
+
+#menu4 {
+	height:150px;
+	width:150px;
+	background-color:#327465;
+	top:100px;
+	margin: auto;
+}
+#menu4:hover {
+	background-color:#55A789;
+}
+
+#menu5 {
+	height:150px;
+	width:150px;
+	background-color:#4B4B8E;
+	top:100px;
+}
+#menu5:hover {
+	background-color:#6E6DD0;
+}	
+
+#menu6 {
+	height:150px;
+	width:150px;
+	background-color:#6C498F;
+	top:100px;
+}
+#menu6:hover {
+	background-color:#9E6AD1;
+}	
+
+#menu7 {
+	height:150px;
+	width:150px;
+	background-color:#8E496B;
+	top:100px;
+}
+#menu7:hover {
+	background-color:#CF6A9C;
+}
+
+#menu8 {
+	height:150px;
+	width:150px;
+	background-color:#8C4040;
+	top:100px;
+}
+#menu8:hover {
+	background-color:#CD5D5D;
+}
+
+#menu9 {
+	height:150px;
+	width:150px;
+	background-color:#8E6945;
+	top:100px;
+}
+#menu9:hover {
+	background-color:#CF9A65;
+}
