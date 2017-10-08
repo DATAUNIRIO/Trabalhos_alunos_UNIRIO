@@ -44,7 +44,9 @@ p {
 	height:150px;
 	width:150px;
 	background-color:#8F8f4A;
-	top:150px;
+	top:100px;
+    padding: 5px;
+    border-radius: 5px;
 
 }
 #menu1:hover {
@@ -57,6 +59,8 @@ p {
 	background-color:#6D904B;
 	top:100px;
 	margin: auto;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu2:hover {
 	background-color:#9FD26D;
@@ -69,6 +73,8 @@ p {
 	background-color:#468C47;
 	top:100px;
 	margin: auto;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu3:hover {
 	background-color:#66CD68;
@@ -80,6 +86,8 @@ p {
 	background-color:#327465;
 	top:100px;
 	margin: auto;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu4:hover {
 	background-color:#55A789;
@@ -90,6 +98,7 @@ p {
 	width:150px;
 	background-color:#4B4B8E;
 	top:100px;
+	padding: 5px;
 }
 #menu5:hover {
 	background-color:#6E6DD0;
@@ -100,6 +109,8 @@ p {
 	width:150px;
 	background-color:#6C498F;
 	top:100px;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu6:hover {
 	background-color:#9E6AD1;
@@ -110,6 +121,8 @@ p {
 	width:150px;
 	background-color:#8E496B;
 	top:100px;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu7:hover {
 	background-color:#CF6A9C;
@@ -120,6 +133,8 @@ p {
 	width:150px;
 	background-color:#8C4040;
 	top:100px;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu8:hover {
 	background-color:#CD5D5D;
@@ -130,6 +145,8 @@ p {
 	width:150px;
 	background-color:#8E6945;
 	top:100px;
+	padding: 5px;
+    border-radius: 5px;
 }
 #menu9:hover {
 	background-color:#CF9A65;
