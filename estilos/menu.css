@@ -47,6 +47,8 @@ p {
 	top:100px;
     padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#8F8f4A,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8F8f4A,#0e5766); /* Standard syntax */
 
 }
 #menu1:hover {
@@ -61,6 +63,8 @@ p {
 	margin: auto;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#6D904B,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6D904B,#0e5766); /* Standard syntax */
 }
 #menu2:hover {
 	background-color:#9FD26D;
@@ -75,6 +79,8 @@ p {
 	margin: auto;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#468C47,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#468C47,#0e5766); /* Standard syntax */
 }
 #menu3:hover {
 	background-color:#66CD68;
@@ -88,6 +94,8 @@ p {
 	margin: auto;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#327465,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#327465,#0e5766); /* Standard syntax */
 }
 #menu4:hover {
 	background-color:#55A789;
@@ -99,6 +107,8 @@ p {
 	background-color:#4B4B8E;
 	top:100px;
 	padding: 5px;
+    background: -moz-linear-gradient(#4B4B8E,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#4B4B8E,#0e5766); /* Standard syntax */
 }
 #menu5:hover {
 	background-color:#6E6DD0;
@@ -111,6 +121,8 @@ p {
 	top:100px;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#6C498F,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#6C498F,#0e5766); /* Standard syntax */
 }
 #menu6:hover {
 	background-color:#9E6AD1;
@@ -123,6 +135,8 @@ p {
 	top:100px;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#8E496B,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8E496B,#0e5766); /* Standard syntax */
 }
 #menu7:hover {
 	background-color:#CF6A9C;
@@ -135,6 +149,8 @@ p {
 	top:100px;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#8C4040,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8C4040,#0e5766); /* Standard syntax */
 }
 #menu8:hover {
 	background-color:#CD5D5D;
@@ -147,6 +163,8 @@ p {
 	top:100px;
 	padding: 5px;
     border-radius: 5px;
+    background: -moz-linear-gradient(#8E6945,#0e5766); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#8E6945,#0e5766); /* Standard syntax */
 }
 #menu9:hover {
 	background-color:#CF9A65;
