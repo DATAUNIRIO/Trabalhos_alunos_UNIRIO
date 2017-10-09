@@ -1,5 +1,5 @@
 body {
-background-color: #5ec9b7;
+background-color: #e8e5e5;
 }
 
 p {
@@ -7,7 +7,8 @@ p {
 }
 
 #menu {
-	height:200px;
+	height:auto;
+        float: left;
 	
 }
 
@@ -26,6 +27,10 @@ p {
 	list-style-type:none;
 	display:inline-flex;
 	font-size:60%;
+    float: left;
+	margin-top: 1px;
+    margin-left: 1px;
+
 	
 }
 /*
@@ -47,12 +52,13 @@ p {
 	top:100px;
     padding: 5px;
     border-radius: 5px;
-    background: -moz-linear-gradient(#8F8f4A,#0e5766); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(#8F8f4A,#0e5766); /* Standard syntax */
+	background: -moz-linear-gradient(#8F8f4A,#0e5766);  
+    background: linear-gradient(#8F8f4A,#0e5766);  
 
 }
 #menu1:hover {
-	background-color:#D1D16C;
+	background: linear-gradient(#D1D16C,#0e5766);
+	/* background-color:#D1D16C;*/
 }
 
 #menu2 {
@@ -168,4 +174,14 @@ p {
 }
 #menu9:hover {
 	background-color:#CF9A65;
+}
+
+.container {
+    width: 94%;
+    margin: 0px auto;
+}
+
+.espacoTexto{
+    width: 92%;
+    margin: 0px auto;
 }
