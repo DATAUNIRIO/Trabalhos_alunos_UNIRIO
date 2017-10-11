@@ -33,17 +33,6 @@ p {
 
 	
 }
-/*
-#menu li a img {
-	height:50px;
-	
-}
-
-.menu-bar {
-	width:10.8%;
-	position:relative;
-}
-*/
 
 #menu1 {
 	height:150px;
@@ -73,7 +62,8 @@ p {
     background: linear-gradient(#6D904B,#0e5766); /* Standard syntax */
 }
 #menu2:hover {
-	background-color:#9FD26D;
+	background: linear-gradient(#9FD26D,#0e5766);
+	/*background-color:#9FD26D;*/
 }
 
 
@@ -89,7 +79,8 @@ p {
     background: linear-gradient(#468C47,#0e5766); /* Standard syntax */
 }
 #menu3:hover {
-	background-color:#66CD68;
+	background: linear-gradient(#66CD68,#0e5766);
+	/*background-color:#66CD68; */
 }
 
 #menu4 {
@@ -104,7 +95,8 @@ p {
     background: linear-gradient(#327465,#0e5766); /* Standard syntax */
 }
 #menu4:hover {
-	background-color:#55A789;
+	background: linear-gradient(#55A789,#0e5766);
+	/*background-color:#55A789;*/
 }
 
 #menu5 {
@@ -117,7 +109,8 @@ p {
     background: linear-gradient(#4B4B8E,#0e5766); /* Standard syntax */
 }
 #menu5:hover {
-	background-color:#6E6DD0;
+	background: linear-gradient(#6E6DD0,#0e5766);
+	/*background-color:#6E6DD0;*/
 }	
 
 #menu6 {
@@ -131,7 +124,8 @@ p {
     background: linear-gradient(#6C498F,#0e5766); /* Standard syntax */
 }
 #menu6:hover {
-	background-color:#9E6AD1;
+	background: linear-gradient(#9E6AD1,#0e5766);
+	/*background-color:#9E6AD1;*/
 }	
 
 #menu7 {
@@ -145,7 +139,8 @@ p {
     background: linear-gradient(#8E496B,#0e5766); /* Standard syntax */
 }
 #menu7:hover {
-	background-color:#CF6A9C;
+	background: linear-gradient(#CF6A9C,#0e5766);
+	/*background-color:#CF6A9C;*/
 }
 
 #menu8 {
@@ -159,7 +154,8 @@ p {
     background: linear-gradient(#8C4040,#0e5766); /* Standard syntax */
 }
 #menu8:hover {
-	background-color:#CD5D5D;
+	background: linear-gradient(#CD5D5D,#0e5766);
+	/*background-color:#CD5D5D;*/
 }
 
 #menu9 {
@@ -173,7 +169,8 @@ p {
     background: linear-gradient(#8E6945,#0e5766); /* Standard syntax */
 }
 #menu9:hover {
-	background-color:#CF9A65;
+	background: linear-gradient(#CF9A65,#0e5766);
+	/*background-color:#CF9A65;*/
 }
 
 .container {
