@@ -179,6 +179,11 @@ p {
 }
 
 .espacoTexto{
-    width: 92%;
-    margin: 0px auto;
+	float:left;
+    width: 94%;
+     margin: 0px auto;
+	 margin-left: 2.7cm;
+	position: relative;
+
+
 }
