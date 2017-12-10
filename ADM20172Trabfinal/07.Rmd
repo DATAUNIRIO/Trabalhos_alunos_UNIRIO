@@ -1,0 +1,329 @@
+---
+title: "Relatório de Análises Estatísticas: Violência e a violência dentro do ambiente educacional"
+author: "Beatriz Nascimento, Maria Luiza Birra e Tayná Mendes"
+output: 
+  html_document:
+  theme: flatly
+highlight: tango
+code_folding: hide
+---
+
+<head>
+<style>
+  body {
+    background-color: #cef2ff;
+  }
+</style>
+</head>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+Universidade Federal do Estado do Rio de Janeiro - UNIRIO
+
+Centro de Ciências Exatas e Tecnologia - CCET
+
+Escola de Matemática - EM
+
+Departamento de Matemática e Estatística - DME
+
+Disciplina: Estatística aplicadas às Ciências Sociais
+
+Relatório de Análises Estatísticas
+
+=======================
+
+# "Violência e a violência dentro do ambiente educacional"
+
+## Professor: Steven Dutt-Ross
+## Curso: Administração Pública
+## Aluno: Beatriz Nascimento, Maria Luiza Birra e Tayná Mendes
+## Turma: 2017.2
+
+## 1. INTRODUÇÃO
+
+> Um estudante de 12 anos morre vítima de uma surra dada por colegas em Belém. 
+
+> Adolescente é baleado na frente de escola durante tentativa de homicídio em Vitória. 
+
+> Guerra do tráfico fecha escolas no Rio de Janeiro. 
+
+São manchetes como essas que vemos recorrentemente, e a cada dia com mais frequência. Influenciadas pela presente realidade, buscamos descobrir com o presente trabalho se os altos indícios de violência tem induzido a violência dentro do ambiente escolar. Nos ateremos ao chamado bullying -  ato agressivo sistemático, envolvendo ameaça, intimidação ou coesão, praticado contra alguém, por um indivíduo ou um grupo de pessoas. (dicionário Michaelis) -, e ao seu primeiro estágio, a ação verbal. 
+
+## 2. OBJETIVO PRINCIPAL
+### O objetivo principal é analisar, com o apoio de ferramentas e modelos estatísticos, os fatores inseridos na violência, e se interferem e contribuem para as ocorrências do bullying verbal.
+
+## a. OBJETIVOS ESPECÍFICOS
+### Os objetivos específicos são comprovar se as hipóteses traçadas através do banco de dados se confirmam ou não. As hipóteses são:
+ 
+## a) Há variância na violência entre as regiões?
+## b) Há correlação entre a taxa de praticantes de Bullying com Tx de Homicídios?  
+## c) Há correlação entre a taxa  de praticantes de Bullying com Tx de Latrocínios?
+#### d) Há correlação entre a taxa de praticantes de Bullying com Tx de Lesão?
+#### e) Há correlação entre a taxa de praticantes de Bullying com Tx de Crimes Violentos?
+
+## 3. METODOLOGIA
+### Utilizando o programa R e as suas interfaces R Commander e R Console, o trabalho é constituído por gráficos, mapa e testes de hipóteses. Os gráficos utilizados são: o Boxplot, este reunindo medidas de posição (mediana, intervalo inter-quartil, máximo e mínimo) e o Histograma, para final visualização do tipo de distribuição. Os testes de hipóteses se constituem de teste de normalidade no primeiro momento para todas as variáveis, para que se saiba a natureza da distribuição - normal ou não - e posteriormente é feito o teste de correlação, primeiramente de interação de variáveis qualitativas e quantitativas, denominado Anova, e subsequentemente para hipóteses com duas variáveis quantitativas, utilizando o método de Pearson quando as distribuições das duas forem normais e o método de Spearman quando uma das variáveis ou as duas não eram normais. Para haver uma conclusão é necessário analisar o p-valor encontrado em cada teste. 
+
+### A base de dados tem o número de observações igual a 27 (abrangendo os 26 estados do Brasil e o distrito federal) e 14 variáveis (Tabela 1).
+
+### Tabela 1  Descrição dos Dados
+![](E:/TABELA.png) 
+
+### 3.1 CRITÉRIOS DO TESTE DE HIPÓTESES
+
+#### Os critérios estabelecidos para a realização do teste de hipóteses foram os seguintes: 
+
+#### No teste de normalidade: 
+#### H0: a distribuição é normal 
+#### H1: a distribuição não é normal 
+#### O alfa foi de 0,05, que é o mais utilizado nas ciências sociais. 
+#### pv<=alpha  rej H0
+#### pv>alpha não rej H0 
+
+#### Nos testes de correlação:
+
+#### Qualitativa x Quantitativa
+#### Teste ANOVA
+#### H0: µVARIÁVEL1 = µVARIÁVEL2 = µVARIÁVEL3 = µVARIÁVEL4= µVARIÁVEL5
+#### H1: Pelo menos uma média diferente
+#### pv<= alpha rej H0
+#### pv>alpha não rej H0	
+
+#### Quantitativa x Quantitativa
+#### H0: p=0   -> não se correlacionam (são independentes) 
+#### H1:p diferente de 0 -> não são independentes. 
+#### A regra de decisão continuou sendo o alfa de 0,05 
+#### p-valor<=alpha - rejeito a H0 
+#### p-valor>alpha - não rejeito H0
+
+## 4. ANÁLISES GRÁFICAS 
+
+```{r echo=FALSE}
+# include this code chunk as-is to set options
+knitr::opts_chunk$set(comment=NA, prompt=TRUE, out.width=750, fig.height=8, fig.width=8)
+#library(Rcmdr)
+library(car)
+library(RcmdrMisc)
+```
+
+
+```{r echo=FALSE}
+# include this code chunk as-is to enable 3D graphs
+
+
+#library(rgl)
+#knitr::knit_hooks$set(webgl = hook_webgl)
+```
+
+
+```{r}
+final <- readXL("E:/finaL/BASE.xlsX", rownames=FALSE, header=TRUE, na="", sheet="Dados", stringsAsFactors=TRUE)
+```
+
+
+
+```{r}
+Boxplot(Tx_Hom~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa", 
+  col=c("#70DB93"),
+  main="Tx. de Homicídios por Região")
+```
+
+
+
+```{r}
+Boxplot(Tx_Lat~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+  ylim=c(0,2.5), col=c("#660000"),
+  main="Tx. de Latrocínios por Região")
+```
+
+
+
+
+```{r}
+Boxplot(Tx_Lesao~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+  col=c("#70DB93"), 
+  main="Tx. de Lesão Corporal seguida de morte por Região")
+```
+
+
+```{r}
+Boxplot(Tx_Cv~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+  ylim=c(0,60),col=c("#660000"), 
+  main="Tx. de Crimes Violentos Letais Intencionais por Região")
+```
+
+
+
+```{r}
+Boxplot(Bullying~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+  ylim=c(0,30),col=c("#70DB93"), 
+  main="Tx. de praticantes de Bullying por Região")
+```
+
+
+
+```{r}
+Boxplot(Bullying.Vit~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+  ylim=c(0,10),col=c("#660000"), 
+  main="Tx. de Vítimas de Bullying por Região")
+```
+
+#### Na intenção de verificarmos graficamente a realidade de nossa hipótese, por regiões, associamos as variáveis qualitativas e quantitativas de nossa base de dados por meio da demonstração gráfica Bloxpot, que oferece uma melhor visualização de resultado para variáveis dessa natureza. Dessa forma, verificou-se uma grande alternância nos números referentes à taxa de homicídios da região Nordeste do Brasil, e esta ainda contendo destaque maior que as outras regiões nessa taxa. Ressalta-se aparente proporção dos dados referentes à região Sudeste, mas tal fato não é em detrimento da realidade da região Nordeste, que tem essa taxa no patamar mais elevado.
+
+#### Apesar do equiparar dos dados das regiões Centro-Oeste, Nordeste e Norte e da admissível proporção nos dados da região Nordeste, percebe-se, apesar de o 3º quartil da região Centro-Oeste e Norte estarem nivelados, a proeminência de dado na região Norte com relação à taxa de Latrocínio. Contudo, com relação à taxa de lesão corporal seguida de morte, a diferença entre as regiões é mínima, tendo em vista a todas as taxas estarem contidas entre 0 e 1% (cálculo por 100.000 hab.). Mesmo assim, é visto que a região que contem o maior valor máximo é a Centro-Oeste.
+
+#### A taxa de crimes violentos letais intencionais se destaca na região Nordeste, tendo predominância dos dados no mais alto patamar (entre 75% e 100% dos dados), conferindo certa proporção nos dados entre todas as regiões.
+
+#### Com relação às taxas de praticantes e vítimas de bullying, empreendem-se numa mesma faixa, sendo as da região Centro-Oeste a mais elevada nas duas variáveis.
+
+![](E:/mapa.png)
+
+### 4.1 TESTES DE HIPÓTESES
+```{r}
+library(nortest, pos=15)
+```
+#### - Violência entre as regiões
+
+#### Histograma para verificação visual sobre o tipo de distribuição.
+
+```{r}
+with(final, Hist(Tx_Hom, scale="frequency", breaks="Sturges", col="#70DB93", 
+  xlab="", ylab="", main="Teste de Normalidade - Tx. de Homicídio"))
+```
+
+
+
+#### Teste de Normalidade
+
+```{r}
+with(final, shapiro.test(Tx_Hom))
+```
+
+#### A distribuição da Taxa de Homicídio é normal. 
+
+
+
+```{r}
+library(mvtnorm, pos=16)
+```
+
+
+```{r}
+library(survival, pos=16)
+```
+
+
+```{r}
+library(MASS, pos=16)
+```
+
+
+```{r}
+library(TH.data, pos=16)
+```
+
+
+```{r}
+library(multcomp, pos=16)
+```
+
+
+```{r}
+library(abind, pos=21)
+```
+
+
+```{r}
+AnovaModel.1 <- aov(Tx_Hom ~ Regiao, data=final)
+summary(AnovaModel.1)
+with(final, numSummary(Tx_Hom, groups=Regiao, statistics=c("mean", "sd")))
+```
+
+#### Mediante teste de correlação verifica-se a não rejeição da hipóstese nula, ou seja, a µVARIÁVELnorte = µVARIÁVELnordeste = µVARIÁVELsudeste = µVARIÁVELsul = µVARIÁVELnorte = µVARIÁVELcentro oeste.
+
+#### - Relação entre a taxa de praticantes de Bullying com taxa de Homicídios
+
+#### - Teste de normalidade
+
+```{r}
+with(final, shapiro.test(Bullying))
+```
+
+#### A distribuição da Taxa de Bullying é normal, assim como foi visto anteriormente sobre a Taxa de Homicídio.
+
+```{r}
+with(final, cor.test(Bullying, Tx_Hom, alternative="two.sided", method="pearson"))
+```
+
+#### Mediante teste de correlação, verifica-se a não rejeição da hipóstese nula, ou seja, não há correlação entre as taxas praticantes de Bullying e a de Homicídio.
+
+#### - Relação entre a taxa de praticantes de Bullying com taxa de Latrocínios
+
+#### Teste de Normalidade
+```{r}
+with(final, shapiro.test(Tx_Lat))
+```
+
+#### Observa-se que as duas taxas tem distribuição normal.
+
+```{r}
+with(final, cor.test(Bullying, Tx_Lat, alternative="two.sided", method="pearson"))
+```
+
+#### Vê-se a não rejeição da hipótese nula, portanto não existe dependência entre as variáveis.
+
+#### - Relação entre a taxa de praticantes de Bullying com a taxa de Lesão
+
+#### Teste de Normalidade
+
+```{r}
+with(final, shapiro.test(Tx_Lesao))
+```
+
+#### Desta feita, nota-se rejeição da hipótese nula da parte da Taxa de Lesão, logo os dados não seguem uma distribuição normal, que diferentemente é o tipo de distribuição da Taxa de Bullying.
+
+```{r}
+with(final, cor.test(Bullying, Tx_Lesao, alternative="two.sided", 
+  method="spearman"))
+```
+
+#### Não há rejeição da hipótese nula, o que se traduz por não haver correlação entre taxa de praticantes de Bullying e a taxa de Latrocínio, não haver influência entre ambas as variáveis.
+
+#### - Relação entre a Taxa de praticantes de Bullying e a Taxa de Crimes Violentos
+
+#### Teste de Normalidade
+
+```{r}
+with(final, shapiro.test(Tx_Cv))
+```
+#### Tem-se a informação a partir do teste de que as duas taxas possuem distribuição normal.
+
+```{r}
+with(final, cor.test(Bullying, Tx_Cv, alternative="two.sided", method="pearson"))
+```
+
+#### Constata-se que é rejeitada a hipótese nula, sabendo assim que há correlação entre as taxas de praticantes de Bullying e de Crimes Violentos. Entende-se então a existencia de correlação linear entre as duas variáveis.
+
+### 5. Conclusão
+
+#### Constata-se, dessa forma, que, felizmente, nossa hipótese não se concretiza na realidade, logo, mediante os dados, mesmo diante de aumento da violência, o impacto dentro das escolas não é conectado à violência presente na sociedade. Vale ressaltar o apenas um teste de hipótese apontar dependência, apresentando correlação entre crimes violentos e a prática do bullying, o que nos dá o ensejo de não fechar as porta para o assunto, podendo-se pensar em futuras análises com novos dados. Ainda, perante o majoritário dos fatos, por enquanto não é necessária alta inquietude com o status quo, apenas a manutenção do mesmo.
+
+#### Valendo-se do último quadro, seria proveitoso citar Patrícia Nogueira Pröglhöf,  mestranda em Administração Pública e Governo pela Fundação Getúlio Vargas, que participou do anuário Brasileiro de Segurança Pública do ano de 2016 (base de nossa análise) nos deixando a seguinte reflexão, que com a qual encerramos: 
+
+> Se queremos que o país reduza seus índices de criminalidade e violência devemos, entre tantas medidas necessárias, garantir que a insegurança não prejudique a oferta de educação, o acesso de nossos jovens a ela e a qualidade do aprendizado. Sobretudo, é preciso que  para além dos conteúdos curriculares  o ambiente escolar seja capaz de ensinar pela prática às nossas crianças e jovens que a paz é possível.
+
+
+
+
+### 6. Fontes e Referências
+
+#### http://www.forumseguranca.org.br/wp-content/uploads/2017/01/Anuario_Site_27-01-2017-RETIFICADO.pdf
+
+#### https://ww2.ibge.gov.br/home/geociencias/areaterritorial/principal.shtm
+
+#### http://www.ipea.gov.br/portal/
+

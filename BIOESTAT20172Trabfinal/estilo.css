@@ -1,0 +1,117 @@
+@charset="UTF-8";
+
+header#cabecalho{
+	border-bottom: 1px #606060 solid;
+	height: 224px;
+}
+
+header#cabecalho h1{
+	font-size: 24pt;
+	line-height: 1.0;
+	text-align: center;
+	padding: 0px;
+	margin-top: 20px;
+}
+
+h2{
+	font-size: 14pt;
+}
+h3{
+	font-size: 12pt;
+}
+h4{
+	font-size: 10pt;
+}
+p{
+	font-size: 10pt;
+	text-align: justify;
+	}
+	
+a{
+	color: #000000;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+ol#lista_sumario{
+		margin:0;
+		padding:20px;
+}	
+
+table{
+	border: 1px solid #000000;
+	border-spacing: 0px;
+	margin-left: 10px;
+	margin-right: auto;
+}
+
+table td{
+	border: 1px solid #000000;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+img{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img#coleta_das_amostras{
+	width: 60%;
+	height: 60%;
+}
+
+img#Zoneamento_da_Cidade_do_Rio_de_Janeiro{
+	width: 80%;
+	height: 80%;
+}
+
+footer#rodape{
+	border-top: 1px solid #606060;
+	height: 100px;
+}
+
+div#interface{
+	width: 1220px;
+	height:934px;
+	background-color: #ffffff;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+}
+
+section#corpo{
+	display: block;
+	width: 950px;
+	height:934px;
+	float: right;
+}
+	
+aside#lateral{
+	display: block;
+	width: 249px;
+	height:941px;
+	float: left;
+	background-color: #d6d6d6;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.5)
+}
+
+div#relatorio{
+	margin: auto;
+	padding: 1em;
+	line-height: 20px;
+	width:930px;
+	height:920px;
+	z-index:1;
+	overflow: auto	
+}
+
+iframe#sumario{
+	width: 249px;
+	height:941px;
+}
