@@ -9,67 +9,67 @@
 
 
 <header id="cabecalho">
-	<H1>QUALIDADE DAS AREIAS DAS PRAIAS DO MUNICÕPIO DO RIO DE JANEIRO</H1>
+	<H1>QUALIDADE DAS AREIAS DAS PRAIAS DO MUNIC√çPIO DO RIO DE JANEIRO</H1>
 	<p><b>Professor orientador:</b><br/>Steven Dutt Ross</p>
-	<p><b>Autores:</b><br/>Fernando Dias - 20161113024 ñ fernandodias@hotmail.com.br<br/>Liliana Cioci Ferreira - 20142114014 - liciocif@gmail.com<br/>Thais Mattos Estruc - 20152115600 ñ tm.estruc@gmail.com</p>
+	<p><b>Autores:</b><br/>Fernando Dias - 20161113024 ¬ñ fernandodias@hotmail.com.br<br/>Liliana Cioci Ferreira - 20142114014 - liciocif@gmail.com<br/>Thais Mattos Estruc - 20152115600 ¬ñ tm.estruc@gmail.com</p>
 </header>
 
 
 <H2>OBJETIVO</H2>
-<p>O objetivo deste trabalho È analisar estatisticamente a qualidade da areia das praias oce‚nicas e abrigadas dos anos de 2010 ‡ 2015, com base na classificaÁ„o da ResoluÁ„o SMAC N∫ 468 de 28 de janeiro de 2010, e o mapeamento das praias com elevado percentual de qualidade n„o recomendada, alÈm de verificar qual o tipo de praia, oce‚nica ou abrigada, apresenta pior qualidade da areia.</p> 
-<H2>INTRODU«√O</H2>
-<p>A qualidade ambiental das praias tem adquirido grande import‚ncia entre os critÈrios de escolha de destino turÌstico. Essa preocupaÁ„o deve-se ao fato de a areia ser um veÌculo de transmiss„o e abrigo de parasitas, sobretudo em zonas balneares, onde a utilizaÁ„o da areia apresenta maior relev‚ncia.</p> 
-<p>A qualidade das areias das praias È influenciada positivamente pelo revolvimento, que areja a areia e renova a exposiÁ„o aos raios UV (IA SA⁄DE). A areia È influenciada negativamente pelas aÁıes antrÛpicas, como lixo, despejo de esgoto; alÈm de dejetos de animais, principalmente c„es.</p> 
-<H2>DESCRI«√O DA BASE DE DADOS</H2>
+<p>O objetivo deste trabalho √© analisar estatisticamente a qualidade da areia das praias oce√¢nicas e abrigadas dos anos de 2010 √† 2015, com base na classifica√ß√£o da Resolu√ß√£o SMAC N¬∫ 468 de 28 de janeiro de 2010, e o mapeamento das praias com elevado percentual de qualidade n√£o recomendada, al√©m de verificar qual o tipo de praia, oce√¢nica ou abrigada, apresenta pior qualidade da areia.</p> 
+<H2>INTRODU√á√ÉO</H2>
+<p>A qualidade ambiental das praias tem adquirido grande import√¢ncia entre os crit√©rios de escolha de destino tur√≠stico. Essa preocupa√ß√£o deve-se ao fato de a areia ser um ve√≠culo de transmiss√£o e abrigo de parasitas, sobretudo em zonas balneares, onde a utiliza√ß√£o da areia apresenta maior relev√¢ncia.</p> 
+<p>A qualidade das areias das praias √© influenciada positivamente pelo revolvimento, que areja a areia e renova a exposi√ß√£o aos raios UV (IA SA√öDE). A areia √© influenciada negativamente pelas a√ß√µes antr√≥picas, como lixo, despejo de esgoto; al√©m de dejetos de animais, principalmente c√£es.</p> 
+<H2>DESCRI√á√ÉO DA BASE DE DADOS</H2>
 <H3>Fonte dos dados</H3>
-<p>A base de dados foi disponibilizada pelo Di·rio Oficial do MunicÌpio, do portal da prefeitura e acessa em 29 de outubro de 2017. Ela recebeu dados complementares (longitude e latitude) do Google Maps.</p>
+<p>A base de dados foi disponibilizada pelo Di√°rio Oficial do Munic√≠pio, do portal da prefeitura e acessa em 29 de outubro de 2017. Ela recebeu dados complementares (longitude e latitude) do Google Maps.</p>
 <img id="data_rio-google_maps" src="data_rio-google_maps.jpg" usemap="#data_rio-google_maps"/>
 <map name="data_rio-google_maps">
 	<area shape="rect" coords="1,1,414,190" href="http://www.data.rio" target="_blank"/>
 	<area shape="rect" coords="424,1,600,190" href="https://www.google.com.br/maps" target="janela"/>
 </map>
-<H3>DescriÁ„o das vari·veis</H3>
-<p>A base de dados foi feita entre os anos de 2010 e 2015 em 37 praias da Cidade do Rio de Janeiro. As praias de Copacabana e Ipanema, Leblon e S„o Conrado foram divididas devido ‡ sua grande extens„o. Foram coletadas 25 amostras para an·lises entre os anos de 2010 ‡ 2014 e 21 amostras em 2015. Estas amostras foram divididas em classes de acordo com a classificaÁ„o da ResoluÁ„o SMAC N∫ 468 de 28 de janeiro de 2010.</p> 
-<p>As vari·veis analisadas s„o: 1 ñ Praia, seu(s) ponto(s) de coleta; 2 ñ Zona; 3 - An·lises; 4 ñ Tipo de Praia; 5 ñ Ano,  6 ñ Longitude e 7 ñ Latitude. A vari·vel an·lise possui subdivisıes:</p>
+<H3>Descri√ß√£o das vari√°veis</H3>
+<p>A base de dados foi feita entre os anos de 2010 e 2015 em 37 praias da Cidade do Rio de Janeiro. As praias de Copacabana e Ipanema, Leblon e S√£o Conrado foram divididas devido √† sua grande extens√£o. Foram coletadas 25 amostras para an√°lises entre os anos de 2010 √† 2014 e 21 amostras em 2015. Estas amostras foram divididas em classes de acordo com a classifica√ß√£o da Resolu√ß√£o SMAC N¬∫ 468 de 28 de janeiro de 2010.</p> 
+<p>As vari√°veis analisadas s√£o: 1 ¬ñ Praia, seu(s) ponto(s) de coleta; 2 ¬ñ Zona; 3 - An√°lises; 4 ¬ñ Tipo de Praia; 5 ¬ñ Ano,  6 ¬ñ Longitude e 7 ¬ñ Latitude. A vari√°vel an√°lise possui subdivis√µes:</p>
 <ul>
-	<li>Total de An·lises;</li>
-	<li>An·lises ”timas;</li>
-	<li>An·lises Boas;</li>
-	<li>An·lises Regulares;</li>
-	<li>N„o Recomendadas;</li>
+	<li>Total de An√°lises;</li>
+	<li>An√°lises √ìtimas;</li>
+	<li>An√°lises Boas;</li>
+	<li>An√°lises Regulares;</li>
+	<li>N√£o Recomendadas;</li>
 </ul>
-<p>O n˙mero total de registros È de 217.</p>
-<H3>N˙mero de observaÁıes</H3>
+<p>O n√∫mero total de registros √© de 217.</p>
+<H3>N√∫mero de observa√ß√µes</H3>
 <p>Foram analisadas 37 praias.</p>
 
 
 ```
  [1] "Arpoador"                         "Barra / Ayrton Senna"            
- [3] "Barra / Cond. Barramares"         "Barra / PepÍ"                    
+ [3] "Barra / Cond. Barramares"         "Barra / Pep√™"                    
  [5] "Barra / Quebra Mar"               "Barra de Guaratiba"              
  [7] "Bica (Ilha do Governador)"        "Botafogo"                        
  [9] "Brisa"                            "Central (Urca)"                  
-[11] "Copacabana / Bar„o de Ipanema"    "Copacabana / Rep˙blica do Peru"  
+[11] "Copacabana / Bar√£o de Ipanema"    "Copacabana / Rep√∫blica do Peru"  
 [13] "Copacabana / Souza Lima"          "Diabo"                           
 [15] "Engenhoca (Ilha do Governador)"   "Flamengo"                        
 [17] "Grumari"                          "Grumari - Rio do Mundo"          
-[19] "Guanabara (Ilha do Governador)"   "Imbuca (Ilha de Paquet·)"        
-[21] "Ipanema / Maria QuitÈria"         "Ipanema / Paul Redfern"          
-[23] "JosÈ Bonif·cio (Ilha de Paquet·)" "Leblon / Bartolomeu Mitre"       
+[19] "Guanabara (Ilha do Governador)"   "Imbuca (Ilha de Paquet√°)"        
+[21] "Ipanema / Maria Quit√©ria"         "Ipanema / Paul Redfern"          
+[23] "Jos√© Bonif√°cio (Ilha de Paquet√°)" "Leblon / Bartolomeu Mitre"       
 [25] "Leblon / Visconde de Albuquerque" "Leme"                            
-[27] "Macumba"                          "Moreninha (Ilha de Paquet·)"     
-[29] "Piscin„o de Ramos"                "Pontal"                          
+[27] "Macumba"                          "Moreninha (Ilha de Paquet√°)"     
+[29] "Piscin√£o de Ramos"                "Pontal"                          
 [31] "Prainha"                          "Ramos"                           
-[33] "RecÙncavo"                        "Recreio / Reserva"               
-[35] "S„o Conrado / Asa Delta"          "S„o Conrado / Hotel Nacional"    
+[33] "Rec√¥ncavo"                        "Recreio / Reserva"               
+[35] "S√£o Conrado / Asa Delta"          "S√£o Conrado / Hotel Nacional"    
 [37] "Vermelha"                        
 ```
 
 <H2>METODOLOGIA</H2> 
-<p>As areias das praias do Rio de Janeiro/RJ foram analisadas quinzenalmente pela Secretaria Municipal 2010 atÈ 2015. A amostragem seguiu as normas da ResoluÁ„o SMAC N∫ 468 de 28 de janeiro de 2010, que dispıe sobre a an·lise e informaÁıes das condiÁıes das areias das praias no MunicÌpio do Rio de Janeiro.</p>
-<p>As amostras foram coletas entre 6 e 9 horas da manh„, em ·reas definidas por pontos centrais georreferenciais, localizados em zonas de areia de baixa umidade, prÛximas ao mar e n„o atingidas pela a marÈ. Para coleta das amostras, foi delimitada uma ·rea retangular de 2m2 e, com auxÌlio de um cano de PVC de 3,6cm de di‚metro e 15cm de profundidade, foram coletadas 5 sub-amostras, uma no ponto central e 4 nos vÈrtices do ret‚ngulo. As sub-amostras foram acondicionadas em sacos estÈreis etiquetados, compondo uma amostra. Foram realizadas an·lises fÌsico-quÌmicas e microbiolÛgicas por um laboratÛrio credenciado pela Secretaria Municipal.</p>
+<p>As areias das praias do Rio de Janeiro/RJ foram analisadas quinzenalmente pela Secretaria Municipal 2010 at√© 2015. A amostragem seguiu as normas da Resolu√ß√£o SMAC N¬∫ 468 de 28 de janeiro de 2010, que disp√µe sobre a an√°lise e informa√ß√µes das condi√ß√µes das areias das praias no Munic√≠pio do Rio de Janeiro.</p>
+<p>As amostras foram coletas entre 6 e 9 horas da manh√£, em √°reas definidas por pontos centrais georreferenciais, localizados em zonas de areia de baixa umidade, pr√≥ximas ao mar e n√£o atingidas pela a mar√©. Para coleta das amostras, foi delimitada uma √°rea retangular de 2m2 e, com aux√≠lio de um cano de PVC de 3,6cm de di√¢metro e 15cm de profundidade, foram coletadas 5 sub-amostras, uma no ponto central e 4 nos v√©rtices do ret√¢ngulo. As sub-amostras foram acondicionadas em sacos est√©reis etiquetados, compondo uma amostra. Foram realizadas an√°lises f√≠sico-qu√≠micas e microbiol√≥gicas por um laborat√≥rio credenciado pela Secretaria Municipal.</p>
 <img id="coleta_das_amostras" src="coleta_das_amostras.jpg"/>
-<p>AlÈm disso, foi traÁado o perfil das praias e identificaÁ„o dos pontos no Google Maps atravÈs da longitude e latitude. Todos os par‚metros e estatÌsticas foram avaliados no Software R-Project, apÛs a importaÁ„o do banco de dados. A an·lise crÌtica de dados foi feita utilizando o Software Microsoft Excel. Foi retirada a distribuiÁ„o percentual de an·lises, j· que È possÌvel calcul·-la na an·lise estatÌstica, e adicionaram-se os valores de longitude e latitude. … possÌvel baixar as bases de dados mencionadas pelos links na imagem.</p>
+<p>Al√©m disso, foi tra√ßado o perfil das praias e identifica√ß√£o dos pontos no Google Maps atrav√©s da longitude e latitude. Todos os par√¢metros e estat√≠sticas foram avaliados no Software R-Project, ap√≥s a importa√ß√£o do banco de dados. A an√°lise cr√≠tica de dados foi feita utilizando o Software Microsoft Excel. Foi retirada a distribui√ß√£o percentual de an√°lises, j√° que √© poss√≠vel calcul√°-la na an√°lise estat√≠stica, e adicionaram-se os valores de longitude e latitude. √â poss√≠vel baixar as bases de dados mencionadas pelos links na imagem.</p>
 <img id="analise_critica_de_dados" src="analise_critica_de_dados.jpg" usemap="#analise_critica_de_dados"/>
 <map name="analise_critica_de_dados">
 	<area shape="rect" coords="1,1,200,203" href="https://github.com/fdsantos04/Analise_Areia_Rio/blob/gh-pages/3388_amostras_classe_qualidade_areia_praia_2015.xlsx" target="_blank"/>
@@ -77,68 +77,68 @@
 </map>
 <H2>RESULTADOS</H2>
 <H3>Perfil das praias</H3>
-<p>Baseado na an·lise dos dados foi possÌvel estabelecer o perfil das praias do municÌpio do Rio de Janeiro. As vari·veis estudadas para a montagem desse perfil foram: 1 ñ praia (pontos de coleta), 2 ñ zona, 3 - tipo de praia, 4 - longitude e 5 - latitude.<p>
-<p>O municÌpio do rio de janeiro possui quatro zonas: central, norte, oeste e sul. Apesar de a zona central possuir saÌda para a baÌa de Guanabara, ela n„o possui praias. Seu litoral È formado pela zona portu·ria e pelo aeroporto Santos Dumont. (Figura 1)<p>
+<p>Baseado na an√°lise dos dados foi poss√≠vel estabelecer o perfil das praias do munic√≠pio do Rio de Janeiro. As vari√°veis estudadas para a montagem desse perfil foram: 1 ¬ñ praia (pontos de coleta), 2 ¬ñ zona, 3 - tipo de praia, 4 - longitude e 5 - latitude.<p>
+<p>O munic√≠pio do rio de janeiro possui quatro zonas: central, norte, oeste e sul. Apesar de a zona central possuir sa√≠da para a ba√≠a de Guanabara, ela n√£o possui praias. Seu litoral √© formado pela zona portu√°ria e pelo aeroporto Santos Dumont. (Figura 1)<p>
 <img id="Zoneamento_da_Cidade_do_Rio_de_Janeiro" src="Zoneamento_da_Cidade_do_Rio_de_Janeiro.jpg"/>
-<p>A primeira distribuiÁ„o analisada foi dos pontos de coleta por zona. Ela informa que a zona sul possui a maioria dos pontos de coleta (44,24%), a zona oeste possui a segunda maior quantidade (33,64%) e a zona norte possui o restante dos pontos (22,12%). (Gr·fico 1)<p> 
+<p>A primeira distribui√ß√£o analisada foi dos pontos de coleta por zona. Ela informa que a zona sul possui a maioria dos pontos de coleta (44,24%), a zona oeste possui a segunda maior quantidade (33,64%) e a zona norte possui o restante dos pontos (22,12%). (Gr√°fico 1)<p> 
 
 <img src="figure/unnamed-chunk-5-1.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="750" />
 
-<p>A segunda informaÁ„o analisada foi sobre a distribuiÁ„o dos pontos de coleta em relaÁ„o ao tipo de praia, oce‚nica ou abrigada. S„o consideradas abrigadas todas as praias que n„o possuem saÌda direta para o oceano. Os pontos localizados nas praias oce‚nicas s„o maioria (64,52%) contra 35,48% das abrigadas. (Gr·fico 2)<p>
+<p>A segunda informa√ß√£o analisada foi sobre a distribui√ß√£o dos pontos de coleta em rela√ß√£o ao tipo de praia, oce√¢nica ou abrigada. S√£o consideradas abrigadas todas as praias que n√£o possuem sa√≠da direta para o oceano. Os pontos localizados nas praias oce√¢nicas s√£o maioria (64,52%) contra 35,48% das abrigadas. (Gr√°fico 2)<p>
 
 <img src="figure/unnamed-chunk-6-1.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="750" />
 
-<p>Comparou-se ainda a distribuiÁ„o dos pontos de coleta relacionando essas duas vari·veis (zona e tipo de praia) - (Gr·fico 3). A zona norte sÛ possui praias abrigadas, j· as zonas oeste e sul possuem a maior parte das praias do tipo oce‚nica.<p>
+<p>Comparou-se ainda a distribui√ß√£o dos pontos de coleta relacionando essas duas vari√°veis (zona e tipo de praia) - (Gr√°fico 3). A zona norte s√≥ possui praias abrigadas, j√° as zonas oeste e sul possuem a maior parte das praias do tipo oce√¢nica.<p>
 
 <img src="figure/unnamed-chunk-7-1.png" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="750" />
 
-<H3>An·lises</H3>
-<p>A ResoluÁ„o SMAC N∫ 468 de 28 de janeiro de 2010 classifica as areias em quatro grupos segundo a sua qualidade (Tabela 1). Essa classificaÁ„o das areias para recreaÁ„o foi obtida a partir dos resultados das densidades de Coliformes Totais e Escherichia coli, considerando o mais restritivo.</p>
-<table id="tabela1"><caption>Tabela 1 - ClassificaÁ„o da areia</caption>
-<tr><td colspan="2">Areias das Praias - ClassificaÁ„o -</td><td>Coliformes Totais(NMP/100g)</td><td>Escherichia coli(NMP/100g)</td></tr>
-<tr><td>”tima</td><td>****</td><td>AtÈ 10.000</td><td>AtÈ 40</td></tr>
+<H3>An√°lises</H3>
+<p>A Resolu√ß√£o SMAC N¬∫ 468 de 28 de janeiro de 2010 classifica as areias em quatro grupos segundo a sua qualidade (Tabela 1). Essa classifica√ß√£o das areias para recrea√ß√£o foi obtida a partir dos resultados das densidades de Coliformes Totais e Escherichia coli, considerando o mais restritivo.</p>
+<table id="tabela1"><caption>Tabela 1 - Classifica√ß√£o da areia</caption>
+<tr><td colspan="2">Areias das Praias - Classifica√ß√£o -</td><td>Coliformes Totais(NMP/100g)</td><td>Escherichia coli(NMP/100g)</td></tr>
+<tr><td>√ìtima</td><td>****</td><td>At√© 10.000</td><td>At√© 40</td></tr>
 <tr><td>Boa</td><td>***</td><td>>10.000 a 20.000</td><td>>40 a 400</td></tr>
 <tr><td>Regular</td><td>**</td><td>>20.000 a 30.000</td><td>>400 a 3.800</td></tr>
-<tr><td>N„o Recomendada</td><td>*</td><td>Acima de 30.000</td><td>Acima de 3.800</td></tr>
+<tr><td>N√£o Recomendada</td><td>*</td><td>Acima de 30.000</td><td>Acima de 3.800</td></tr>
 </table>
-<p>Segundo essa resoluÁ„o, n„o È recomendado o contato prim·rio com as areias que possuem: 1 ñ classificaÁ„o igual a * ou 2 - sinais de poluiÁ„o perceptÌveis pelo olfato ou vis„o.</p>
-<p>A primeira an·lise foi feita comparando a qualidade das areias de duas praias, a praia vermelha na Urca e o piscin„o de Ramos na MarÈ. Essas s„o duas praias s„o de tipos diferentes; a primeira È oce‚nica e a segunda È um tipo especÌfico de abrigada, uma praia artificial.</p>
+<p>Segundo essa resolu√ß√£o, n√£o √© recomendado o contato prim√°rio com as areias que possuem: 1 ¬ñ classifica√ß√£o igual a * ou 2 - sinais de polui√ß√£o percept√≠veis pelo olfato ou vis√£o.</p>
+<p>A primeira an√°lise foi feita comparando a qualidade das areias de duas praias, a praia vermelha na Urca e o piscin√£o de Ramos na Mar√©. Essas s√£o duas praias s√£o de tipos diferentes; a primeira √© oce√¢nica e a segunda √© um tipo espec√≠fico de abrigada, uma praia artificial.</p>
 <img src="grafico_mov.jpg" usemap="#grafico_mov"/>
 <map name="grafico_mov">
 	<area shape="rect" coords="1,1,252,245" href="https://fdsantos04.github.io/Analise_Areia_Rio/MotionChartID36183044249b.html" target="_blank"/>
 </map>
-<p>No ano de 2015 todos os pontos de coleta foram analisados vinte e uma vezes.  O mapa 1 informa o percentual de cada uma dessas an·lises nesses pontos em 2015. O mapa 2 informa qual foi an·lise (Ûtima, boa, regular ou n„o recomendada) foi predominante nesse ano.</p>
+<p>No ano de 2015 todos os pontos de coleta foram analisados vinte e uma vezes.  O mapa 1 informa o percentual de cada uma dessas an√°lises nesses pontos em 2015. O mapa 2 informa qual foi an√°lise (√≥tima, boa, regular ou n√£o recomendada) foi predominante nesse ano.</p>
 
-<img src="Ìcone_mapas.jpg" usemap="#Ìcone_mapas"/>
-<map name="#Ìcone_mapas">
+<img src="√≠cone_mapas.jpg" usemap="#√≠cone_mapas"/>
+<map name="#√≠cone_mapas">
 	<area shape="rect" coords="1,1,252,290" href="mapa1.html" target="_blank"/>
 	<area shape="rect" coords="280,1,528,290" href="mapa2.html" target="_blank"/>
 </map>
-<H4>Teste de HipÛteses</H4>
-<p>A partir das primeiras an·lises foi possÌvel montar o teste de hipÛteses, que nesse caso È um <b>modelo linear generalizado</b>. A sua funÁ„o assume valores entre 0 e 1, que podem ser interpretados como 0 e 100%.</p>
+<H4>Teste de Hip√≥teses</H4>
+<p>A partir das primeiras an√°lises foi poss√≠vel montar o teste de hip√≥teses, que nesse caso √© um <b>modelo linear generalizado</b>. A sua fun√ß√£o assume valores entre 0 e 1, que podem ser interpretados como 0 e 100%.</p>
 <ul>
-<li>Intervalo de confianÁa de 95%;</li>
+<li>Intervalo de confian√ßa de 95%;</li>
 <li>Valor de &alpha; = 0,05;</li>
-<li><b>H0</b>: ano e tipo de praia n„o interferem no percentual de an·lises n„o recomendadas;</li>
-<li><b>H1</b>: h· interferÍncia.</li>
+<li><b>H0</b>: ano e tipo de praia n√£o interferem no percentual de an√°lises n√£o recomendadas;</li>
+<li><b>H1</b>: h√° interfer√™ncia.</li>
 </ul>
-<p>A partir das primeiras an·lises foi possÌvel montar o teste de hipÛteses, que nesse caso È um modelo linear generalizado. A sua funÁ„o assume valores entre 0 e 1, que podem ser interpretados como 0 e 100%.</p>
+<p>A partir das primeiras an√°lises foi poss√≠vel montar o teste de hip√≥teses, que nesse caso √© um modelo linear generalizado. A sua fun√ß√£o assume valores entre 0 e 1, que podem ser interpretados como 0 e 100%.</p>
 
-<p>A EquaÁ„o do modelo linear generalizado informa como o valor mÈdio (ou esperado) de uma vari·vel dependente y est· relacionado com duas vari·veis independentes x1 e x2.</p>
+<p>A Equa√ß√£o do modelo linear generalizado informa como o valor m√©dio (ou esperado) de uma vari√°vel dependente y est√° relacionado com duas vari√°veis independentes x1 e x2.</p>
 <ul>
 <li><b>y=ln(P/(1-P))=&beta;0+&beta;1x1+&beta;2x2</b></li>
-<li><b>y</b> = Probabilidade de an·lise n„o recomendadas;</li>
+<li><b>y</b> = Probabilidade de an√°lise n√£o recomendadas;</li>
 <li><b>x1</b>  = ano;</li>
 <li><b>x2</b> = tipo de praia;</li>
-<li>Os valores de <b>&beta;0</b>, <b>&beta;1</b>, e <b>&beta;2</b> s„o constantes e estimados a partir de dados da amostra;</li>
+<li>Os valores de <b>&beta;0</b>, <b>&beta;1</b>, e <b>&beta;2</b> s√£o constantes e estimados a partir de dados da amostra;</li>
 </ul>
-<p>O resumo do modelo logit, criado no software R-Project, informa sobre os valores das constantes &beta;0, &beta;1, e &beta;2 e do P-valor das duas vari·veis. Com a interpretaÁ„o desses dados foi possÌvel verificar as hipÛteses.</p>
+<p>O resumo do modelo logit, criado no software R-Project, informa sobre os valores das constantes &beta;0, &beta;1, e &beta;2 e do P-valor das duas vari√°veis. Com a interpreta√ß√£o desses dados foi poss√≠vel verificar as hip√≥teses.</p>
 
 
 ```
 
 Call:
-glm(formula = cbind(N„o.Recomendadas, Total.de.an·lises - N„o.Recomendadas) ~ 
+glm(formula = cbind(N√£o.Recomendadas, Total.de.an√°lises - N√£o.Recomendadas) ~ 
     Ano + Tipo.de.Praia, family = binomial(logit), data = Areia)
 
 Deviance Residuals: 
@@ -149,7 +149,7 @@ Coefficients:
                           Estimate Std. Error z value Pr(>|z|)    
 (Intercept)                8.41357   39.98091   0.210    0.833    
 Ano                       -0.00462    0.01987  -0.233    0.816    
-Tipo.de.Praia[T.Oce‚nica] -0.54930    0.06727  -8.166 3.19e-16 ***
+Tipo.de.Praia[T.Oce√¢nica] -0.54930    0.06727  -8.166 3.19e-16 ***
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
@@ -162,42 +162,42 @@ AIC: 1588.4
 Number of Fisher Scoring iterations: 4
 ```
 
-<p>O valor do P-valor da vari·vel ano È 0,816, um n˙mero maior que o valor de &alpha; (0,05). Nesse caso, n„o h· rejeiÁ„o da hipÛtese nula (H0) e o ano n„o interfere no percentual de an·lises n„o recomendadas.</p>
-<p>O valor do P-valor da vari·vel tipo de praia È 3,16e-16, um n˙mero muito menor que &alpha; (0,05). Nesse caso, ocorre rejeiÁ„o da hipÛtese nula (H0) e tipo de praia interfere no percentual de an·lises n„o recomendadas.</p>
-<p>Valores das constantes e an·lise de P-valor:</p>
+<p>O valor do P-valor da vari√°vel ano √© 0,816, um n√∫mero maior que o valor de &alpha; (0,05). Nesse caso, n√£o h√° rejei√ß√£o da hip√≥tese nula (H0) e o ano n√£o interfere no percentual de an√°lises n√£o recomendadas.</p>
+<p>O valor do P-valor da vari√°vel tipo de praia √© 3,16e-16, um n√∫mero muito menor que &alpha; (0,05). Nesse caso, ocorre rejei√ß√£o da hip√≥tese nula (H0) e tipo de praia interfere no percentual de an√°lises n√£o recomendadas.</p>
+<p>Valores das constantes e an√°lise de P-valor:</p>
 <ul>
 <li><b>y=&beta;0+&beta;1x1+&beta;2x2</b></li>
 <li><b>y=8,4-0,004*Ano-0,549*Tipo.de.Praia</b></li>
 </ul>
-<table><caption>Tabela 2 - Dados da equaÁ„o</caption>
+<table><caption>Tabela 2 - Dados da equa√ß√£o</caption>
 <tr><td>xi</td><td>&beta;i</td><td>&alpha;</td><td>P-valor</td></tr>
 <tr><td>x1 = Ano</td><td>&beta;1 = -0,004</td><td>0,05</td><td>0,816</td></tr>
 <tr><td>x2 = Tipo.de.Praia</td><td>&beta;2 = -0,549</td><td>0,05</td><td>3,16e-16</tr>
 </table>
-<p>Foram criados ainda dois gr·ficos de efeito das duas vari·veis:</p>
+<p>Foram criados ainda dois gr√°ficos de efeito das duas vari√°veis:</p>
 
 <img src="figure/unnamed-chunk-9-1.png" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="750" />
 
-<p>Pela an·lise do gr·fico de efeito do ano È possÌvel observar que: 1 - a probabilidade de an·lises n„o recomendadas est· entre 22 e 23% nos cinco anos; 2 - a variabilidade È maior em 2010 e 2015 e menor em 2012 e 2013 - quanto menor a variabilidade, maior È a certeza. A inclinaÁ„o da reta È extremamente pequena, pois sua constante È prÛxima de zero.</p>
+<p>Pela an√°lise do gr√°fico de efeito do ano √© poss√≠vel observar que: 1 - a probabilidade de an√°lises n√£o recomendadas est√° entre 22 e 23% nos cinco anos; 2 - a variabilidade √© maior em 2010 e 2015 e menor em 2012 e 2013 - quanto menor a variabilidade, maior √© a certeza. A inclina√ß√£o da reta √© extremamente pequena, pois sua constante √© pr√≥xima de zero.</p>
 
 <img src="figure/unnamed-chunk-10-1.png" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="750" />
 
-<p>O gr·fico de efeitos do tipo de praia informa que a probabilidade de an·lises n„o recomendadas nas praias abrigadas È de aproximadamente 29% contra aproximadamente 19% das oce‚nicas. A reta È decrescente, o que est· de acordo com o valor da sua constante.</p>
-<H2>DISCURSS√O</H2>
-<p>Podemos citar como causas principais da poluiÁ„o verificada em pontos da praia da Barra da Tijuca o elevado Ìndice de poluiÁ„o do complexo lagunar que atravÈs do Canal da Barra segue em direÁ„o ao mar. A ocupaÁ„o desordenada nas encostas faz com que di·riamente os rios e lagoas da regi„o recebam sedimentos e lixo provocando o assoreamento da saÌda dos canais.  O ac˙mulo de lixo, a proliferaÁ„o de plantas aqu·ticas com a contaminaÁ„o por esgoto, agravada pela ressaca que ao remexer o fundo das lagoas libera g·s sulfÌdrico e metano proveniente do excesso de lixo s„o os principais causadores da poluiÁ„o nestas praias.</p>
-<p>As praias de Botafogo e Flamengo recebem a contribuiÁ„o dos rios BerquÛ e Banana Podre canalizados e subterr‚neos alÈm da galeria de cintura que recolhe ·gua de drenagem pluvial e dos rios. A galeria de ·gua pluvial recebe lixo e esgoto clandestino alÈm de poeiras e outas partÌculas. O Rio BerquÛ por passar debaixo do CemitÈrio S. Jo„o Batista recebe necrochorume devido ‡ infiltraÁ„o em suas galerias.</p>
-<p>As praias da Ilha do Governador est„o localizadas prÛximo ao Complexo PetroquÌmico do Rio de Janeiro e de regi„o de intensa atividade industrial e ainda sofrem as sequelas catastrÛficas do despejo de 6 milhıes de litros de petrÛleo bruto na baÌa pelo navio-tanque iraquiano Tarik Ibn Ziyad (1975) e do vazamento de um oleoduto da Reduc que liberou 1,3 milh„o de litros de petrÛleo na ·gua (2000).</p>
-<p>Comparando as praias Vermelha, na Urca, piscin„o e a praia de Ramos, ambos na MarÈ podemos destacar algumas observaÁıes. A primeira È que a quantidade de pessoas influÍncia negativamente a qualidade da areia, as areias do piscin„o e da praia de Ramos possuem qualidade muito diferentes. Essa ˙ltima recebe menos pessoas e possui qualidade melhor. A segunda È que praias abrigadas possuem qualidade de areia pior que as oce‚nicas, isso ocorre devido a menor taxa de renovaÁ„o das suas ·guas.</p>
-<p>Podemos encontrar em praias contaminadas o fungo <i>Trichophytone</i>, as bactÈrias <i>Escherichia coli</i> e <i>Salmonella</i>, o vÌrus da hepatite A, o verme <i>Ancylostoma caninu</i> e a pulga <i>Tunga penetrans</i>. Os sintomas de contaminaÁ„o mais comuns s„o: dermatofitoses, n·useas, diarreia, febre, dores musculares e nas articulaÁıes, perda de peso e cansaÁo.</p> 
-<H2>CONCLUS’ES E RECOMENDA«’ES</H2>
-<p>A qualidade da areia se relaciona com a qualidade da ·gua, praias com ·guas mais limpas tendem a ter qualidade da areia melhor. As praias abrigadas possuem, portanto amostras de areia piores do que as oce‚nicas, isso ocorre porque a renovaÁ„o das suas ·guas È mais lenta. Outro fator importante È a quantidade de frequentadores e a presenÁa de animais, normalmente quando mais pessoas a praia recebe, pior È a qualidade da areia. A presenÁa de animais tambÈm influÍncia negativamente a qualidade da areia, pois h· risco de contaminaÁ„o por fezes. Ao longo dos anos de 2010 ‡ 2015 n„o houve mudanÁa significativa na qualidade da areia.</p>
-<p>Recomendamos que a prefeitura, ou qualquer outro Ûrg„o competente, volte a fazer o controle da qualidade das areias e disponibilize os resultados para a populaÁ„o atravÈs de um site ou pela mÌdia. N„o recomendamos a construÁ„o de praias artificiais em uma cidade litor‚nea como o Rio de Janeiro, j· que a sua manutenÁ„o È difÌcil. A qualidade da areia do piscin„o de Ramos piorou ao longo dos anos, tornando-se a praia com a pior qualidade de areia.</p>
-<H2>REFER NCIA BIBLIOGRAFICA</H2>
-<p>ANDERSON, David R. An·lise de Regress„o. In <b>EstatÌstica Aplicada ‡ AdministraÁ„o e Economia</b>. 2™ ediÁ„o. S„o Paulo: Editora Pioneira Thomson Learning, 2005.</p>
-<p>e-Disciplinas. <b>An·lise Multivariada - Aplicada ‡ Contabilidade</b>. DisponÌvel em: <https://goo.gl/6GYBKD/>. Acesso em: 01 de dezembro. 2017.</p>
-<p>G1. <b>Areias das praias do Rio est„o sem controle de qualidade h· mais de um ano</b>. DisponÌvel em: <https://goo.gl/khHnke/>. Acesso em: 01 de dezembro. 2017.</p>
-<p>Instituto de AdministraÁ„o da Sa˙de (IA SA⁄DE) ñ Regi„o AutÛnoma da Madeira. <b>Areia das Praias</b>. DisponÌvel em: <http://www.iasaude.pt/index.php/saude-vigilancia/areia-da-praias>. Acessado em: 25/11/2017.</p>
-<p>Stack Exchange. <b>GLM for proportion data in r</b>. DisponÌvel em: <https://goo.gl/sRGtMN/>. Acesso em: 01 de dezembro. 2017.</p>
+<p>O gr√°fico de efeitos do tipo de praia informa que a probabilidade de an√°lises n√£o recomendadas nas praias abrigadas √© de aproximadamente 29% contra aproximadamente 19% das oce√¢nicas. A reta √© decrescente, o que est√° de acordo com o valor da sua constante.</p>
+<H2>DISCURSS√ÉO</H2>
+<p>Podemos citar como causas principais da polui√ß√£o verificada em pontos da praia da Barra da Tijuca o elevado √≠ndice de polui√ß√£o do complexo lagunar que atrav√©s do Canal da Barra segue em dire√ß√£o ao mar. A ocupa√ß√£o desordenada nas encostas faz com que di√°riamente os rios e lagoas da regi√£o recebam sedimentos e lixo provocando o assoreamento da sa√≠da dos canais.  O ac√∫mulo de lixo, a prolifera√ß√£o de plantas aqu√°ticas com a contamina√ß√£o por esgoto, agravada pela ressaca que ao remexer o fundo das lagoas libera g√°s sulf√≠drico e metano proveniente do excesso de lixo s√£o os principais causadores da polui√ß√£o nestas praias.</p>
+<p>As praias de Botafogo e Flamengo recebem a contribui√ß√£o dos rios Berqu√≥ e Banana Podre canalizados e subterr√¢neos al√©m da galeria de cintura que recolhe √°gua de drenagem pluvial e dos rios. A galeria de √°gua pluvial recebe lixo e esgoto clandestino al√©m de poeiras e outas part√≠culas. O Rio Berqu√≥ por passar debaixo do Cemit√©rio S. Jo√£o Batista recebe necrochorume devido √† infiltra√ß√£o em suas galerias.</p>
+<p>As praias da Ilha do Governador est√£o localizadas pr√≥ximo ao Complexo Petroqu√≠mico do Rio de Janeiro e de regi√£o de intensa atividade industrial e ainda sofrem as sequelas catastr√≥ficas do despejo de 6 milh√µes de litros de petr√≥leo bruto na ba√≠a pelo navio-tanque iraquiano Tarik Ibn Ziyad (1975) e do vazamento de um oleoduto da Reduc que liberou 1,3 milh√£o de litros de petr√≥leo na √°gua (2000).</p>
+<p>Comparando as praias Vermelha, na Urca, piscin√£o e a praia de Ramos, ambos na Mar√© podemos destacar algumas observa√ß√µes. A primeira √© que a quantidade de pessoas influ√™ncia negativamente a qualidade da areia, as areias do piscin√£o e da praia de Ramos possuem qualidade muito diferentes. Essa √∫ltima recebe menos pessoas e possui qualidade melhor. A segunda √© que praias abrigadas possuem qualidade de areia pior que as oce√¢nicas, isso ocorre devido a menor taxa de renova√ß√£o das suas √°guas.</p>
+<p>Podemos encontrar em praias contaminadas o fungo <i>Trichophytone</i>, as bact√©rias <i>Escherichia coli</i> e <i>Salmonella</i>, o v√≠rus da hepatite A, o verme <i>Ancylostoma caninu</i> e a pulga <i>Tunga penetrans</i>. Os sintomas de contamina√ß√£o mais comuns s√£o: dermatofitoses, n√°useas, diarreia, febre, dores musculares e nas articula√ß√µes, perda de peso e cansa√ßo.</p> 
+<H2>CONCLUS√ïES E RECOMENDA√á√ïES</H2>
+<p>A qualidade da areia se relaciona com a qualidade da √°gua, praias com √°guas mais limpas tendem a ter qualidade da areia melhor. As praias abrigadas possuem, portanto amostras de areia piores do que as oce√¢nicas, isso ocorre porque a renova√ß√£o das suas √°guas √© mais lenta. Outro fator importante √© a quantidade de frequentadores e a presen√ßa de animais, normalmente quando mais pessoas a praia recebe, pior √© a qualidade da areia. A presen√ßa de animais tamb√©m influ√™ncia negativamente a qualidade da areia, pois h√° risco de contamina√ß√£o por fezes. Ao longo dos anos de 2010 √† 2015 n√£o houve mudan√ßa significativa na qualidade da areia.</p>
+<p>Recomendamos que a prefeitura, ou qualquer outro √≥rg√£o competente, volte a fazer o controle da qualidade das areias e disponibilize os resultados para a popula√ß√£o atrav√©s de um site ou pela m√≠dia. N√£o recomendamos a constru√ß√£o de praias artificiais em uma cidade litor√¢nea como o Rio de Janeiro, j√° que a sua manuten√ß√£o √© dif√≠cil. A qualidade da areia do piscin√£o de Ramos piorou ao longo dos anos, tornando-se a praia com a pior qualidade de areia.</p>
+<H2>REFER√äNCIA BIBLIOGRAFICA</H2>
+<p>ANDERSON, David R. An√°lise de Regress√£o. In <b>Estat√≠stica Aplicada √† Administra√ß√£o e Economia</b>. 2¬™ edi√ß√£o. S√£o Paulo: Editora Pioneira Thomson Learning, 2005.</p>
+<p>e-Disciplinas. <b>An√°lise Multivariada - Aplicada √† Contabilidade</b>. Dispon√≠vel em: <https://goo.gl/6GYBKD/>. Acesso em: 01 de dezembro. 2017.</p>
+<p>G1. <b>Areias das praias do Rio est√£o sem controle de qualidade h√° mais de um ano</b>. Dispon√≠vel em: <https://goo.gl/khHnke/>. Acesso em: 01 de dezembro. 2017.</p>
+<p>Instituto de Administra√ß√£o da Sa√∫de (IA SA√öDE) ¬ñ Regi√£o Aut√≥noma da Madeira. <b>Areia das Praias</b>. Dispon√≠vel em: <http://www.iasaude.pt/index.php/saude-vigilancia/areia-da-praias>. Acessado em: 25/11/2017.</p>
+<p>Stack Exchange. <b>GLM for proportion data in r</b>. Dispon√≠vel em: <https://goo.gl/sRGtMN/>. Acesso em: 01 de dezembro. 2017.</p>
 </body>
 <footer id="rodape">
 </footer>
