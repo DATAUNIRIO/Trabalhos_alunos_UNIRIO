@@ -1,6 +1,6 @@
 ---
-title: "Relatório de Análises Estatísticas: Violência e a violência dentro do ambiente educacional"
-author: "Beatriz Nascimento, Maria Luiza Birra e Tayná Mendes"
+title: "RelatÃ³rio de AnÃ¡lises EstatÃ­sticas: ViolÃªncia e a violÃªncia dentro do ambiente educacional"
+author: "Beatriz Nascimento, Maria Luiza Birra e TaynÃ¡ Mendes"
 output: 
   html_document:
   theme: flatly
@@ -24,83 +24,83 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Universidade Federal do Estado do Rio de Janeiro - UNIRIO
 
-Centro de Ciências Exatas e Tecnologia - CCET
+Centro de CiÃªncias Exatas e Tecnologia - CCET
 
-Escola de Matemática - EM
+Escola de MatemÃ¡tica - EM
 
-Departamento de Matemática e Estatística - DME
+Departamento de MatemÃ¡tica e EstatÃ­stica - DME
 
-Disciplina: Estatística aplicadas às Ciências Sociais
+Disciplina: EstatÃ­stica aplicadas Ã s CiÃªncias Sociais
 
-Relatório de Análises Estatísticas
+RelatÃ³rio de AnÃ¡lises EstatÃ­sticas
 
 =======================
 
-# "Violência e a violência dentro do ambiente educacional"
+# "ViolÃªncia e a violÃªncia dentro do ambiente educacional"
 
 ## Professor: Steven Dutt-Ross
-## Curso: Administração Pública
-## Aluno: Beatriz Nascimento, Maria Luiza Birra e Tayná Mendes
+## Curso: AdministraÃ§Ã£o PÃºblica
+## Aluno: Beatriz Nascimento, Maria Luiza Birra e TaynÃ¡ Mendes
 ## Turma: 2017.2
 
-## 1. INTRODUÇÃO
+## 1. INTRODUÃ‡ÃƒO
 
-> Um estudante de 12 anos morre vítima de uma surra dada por colegas em Belém. 
+> Um estudante de 12 anos morre vÃ­tima de uma surra dada por colegas em BelÃ©m. 
 
-> Adolescente é baleado na frente de escola durante tentativa de homicídio em Vitória. 
+> Adolescente Ã© baleado na frente de escola durante tentativa de homicÃ­dio em VitÃ³ria. 
 
-> Guerra do tráfico fecha escolas no Rio de Janeiro. 
+> Guerra do trÃ¡fico fecha escolas no Rio de Janeiro. 
 
-São manchetes como essas que vemos recorrentemente, e a cada dia com mais frequência. Influenciadas pela presente realidade, buscamos descobrir com o presente trabalho se os altos indícios de violência tem induzido a violência dentro do ambiente escolar. Nos ateremos ao chamado bullying -  ato agressivo sistemático, envolvendo ameaça, intimidação ou coesão, praticado contra alguém, por um indivíduo ou um grupo de pessoas. (dicionário Michaelis) -, e ao seu primeiro estágio, a ação verbal. 
+SÃ£o manchetes como essas que vemos recorrentemente, e a cada dia com mais frequÃªncia. Influenciadas pela presente realidade, buscamos descobrir com o presente trabalho se os altos indÃ­cios de violÃªncia tem induzido a violÃªncia dentro do ambiente escolar. Nos ateremos ao chamado bullying -  ato agressivo sistemÃ¡tico, envolvendo ameaÃ§a, intimidaÃ§Ã£o ou coesÃ£o, praticado contra alguÃ©m, por um indivÃ­duo ou um grupo de pessoas. (dicionÃ¡rio Michaelis) -, e ao seu primeiro estÃ¡gio, a aÃ§Ã£o verbal. 
 
 ## 2. OBJETIVO PRINCIPAL
-### O objetivo principal é analisar, com o apoio de ferramentas e modelos estatísticos, os fatores inseridos na violência, e se interferem e contribuem para as ocorrências do bullying verbal.
+### O objetivo principal Ã© analisar, com o apoio de ferramentas e modelos estatÃ­sticos, os fatores inseridos na violÃªncia, e se interferem e contribuem para as ocorrÃªncias do bullying verbal.
 
-## a. OBJETIVOS ESPECÍFICOS
-### Os objetivos específicos são comprovar se as hipóteses traçadas através do banco de dados se confirmam ou não. As hipóteses são:
+## a. OBJETIVOS ESPECÃFICOS
+### Os objetivos especÃ­ficos sÃ£o comprovar se as hipÃ³teses traÃ§adas atravÃ©s do banco de dados se confirmam ou nÃ£o. As hipÃ³teses sÃ£o:
  
-## a) Há variância na violência entre as regiões?
-## b) Há correlação entre a taxa de praticantes de Bullying com Tx de Homicídios?  
-## c) Há correlação entre a taxa  de praticantes de Bullying com Tx de Latrocínios?
-#### d) Há correlação entre a taxa de praticantes de Bullying com Tx de Lesão?
-#### e) Há correlação entre a taxa de praticantes de Bullying com Tx de Crimes Violentos?
+## a) HÃ¡ variÃ¢ncia na violÃªncia entre as regiÃµes?
+## b) HÃ¡ correlaÃ§Ã£o entre a taxa de praticantes de Bullying com Tx de HomicÃ­dios?  
+## c) HÃ¡ correlaÃ§Ã£o entre a taxa  de praticantes de Bullying com Tx de LatrocÃ­nios?
+#### d) HÃ¡ correlaÃ§Ã£o entre a taxa de praticantes de Bullying com Tx de LesÃ£o?
+#### e) HÃ¡ correlaÃ§Ã£o entre a taxa de praticantes de Bullying com Tx de Crimes Violentos?
 
 ## 3. METODOLOGIA
-### Utilizando o programa R e as suas interfaces R Commander e R Console, o trabalho é constituído por gráficos, mapa e testes de hipóteses. Os gráficos utilizados são: o Boxplot, este reunindo medidas de posição (mediana, intervalo inter-quartil, máximo e mínimo) e o Histograma, para final visualização do tipo de distribuição. Os testes de hipóteses se constituem de teste de normalidade no primeiro momento para todas as variáveis, para que se saiba a natureza da distribuição - normal ou não - e posteriormente é feito o teste de correlação, primeiramente de interação de variáveis qualitativas e quantitativas, denominado Anova, e subsequentemente para hipóteses com duas variáveis quantitativas, utilizando o método de Pearson quando as distribuições das duas forem normais e o método de Spearman quando uma das variáveis ou as duas não eram normais. Para haver uma conclusão é necessário analisar o p-valor encontrado em cada teste. 
+### Utilizando o programa R e as suas interfaces R Commander e R Console, o trabalho Ã© constituÃ­do por grÃ¡ficos, mapa e testes de hipÃ³teses. Os grÃ¡ficos utilizados sÃ£o: o Boxplot, este reunindo medidas de posiÃ§Ã£o (mediana, intervalo inter-quartil, mÃ¡ximo e mÃ­nimo) e o Histograma, para final visualizaÃ§Ã£o do tipo de distribuiÃ§Ã£o. Os testes de hipÃ³teses se constituem de teste de normalidade no primeiro momento para todas as variÃ¡veis, para que se saiba a natureza da distribuiÃ§Ã£o - normal ou nÃ£o - e posteriormente Ã© feito o teste de correlaÃ§Ã£o, primeiramente de interaÃ§Ã£o de variÃ¡veis qualitativas e quantitativas, denominado Anova, e subsequentemente para hipÃ³teses com duas variÃ¡veis quantitativas, utilizando o mÃ©todo de Pearson quando as distribuiÃ§Ãµes das duas forem normais e o mÃ©todo de Spearman quando uma das variÃ¡veis ou as duas nÃ£o eram normais. Para haver uma conclusÃ£o Ã© necessÃ¡rio analisar o p-valor encontrado em cada teste. 
 
-### A base de dados tem o número de observações igual a 27 (abrangendo os 26 estados do Brasil e o distrito federal) e 14 variáveis (Tabela 1).
+### A base de dados tem o nÃºmero de observaÃ§Ãµes igual a 27 (abrangendo os 26 estados do Brasil e o distrito federal) e 14 variÃ¡veis (Tabela 1).
 
-### Tabela 1  Descrição dos Dados
+### Tabela 1  DescriÃ§Ã£o dos Dados
 ![](E:/TABELA.png) 
 
-### 3.1 CRITÉRIOS DO TESTE DE HIPÓTESES
+### 3.1 CRITÃ‰RIOS DO TESTE DE HIPÃ“TESES
 
-#### Os critérios estabelecidos para a realização do teste de hipóteses foram os seguintes: 
+#### Os critÃ©rios estabelecidos para a realizaÃ§Ã£o do teste de hipÃ³teses foram os seguintes: 
 
 #### No teste de normalidade: 
-#### H0: a distribuição é normal 
-#### H1: a distribuição não é normal 
-#### O alfa foi de 0,05, que é o mais utilizado nas ciências sociais. 
+#### H0: a distribuiÃ§Ã£o Ã© normal 
+#### H1: a distribuiÃ§Ã£o nÃ£o Ã© normal 
+#### O alfa foi de 0,05, que Ã© o mais utilizado nas ciÃªncias sociais. 
 #### pv<=alpha  rej H0
-#### pv>alpha não rej H0 
+#### pv>alpha nÃ£o rej H0 
 
-#### Nos testes de correlação:
+#### Nos testes de correlaÃ§Ã£o:
 
 #### Qualitativa x Quantitativa
 #### Teste ANOVA
-#### H0: µVARIÁVEL1 = µVARIÁVEL2 = µVARIÁVEL3 = µVARIÁVEL4= µVARIÁVEL5
-#### H1: Pelo menos uma média diferente
+#### H0: ÂµVARIÃVEL1 = ÂµVARIÃVEL2 = ÂµVARIÃVEL3 = ÂµVARIÃVEL4= ÂµVARIÃVEL5
+#### H1: Pelo menos uma mÃ©dia diferente
 #### pv<= alpha rej H0
-#### pv>alpha não rej H0	
+#### pv>alpha nÃ£o rej H0	
 
 #### Quantitativa x Quantitativa
-#### H0: p=0   -> não se correlacionam (são independentes) 
-#### H1:p diferente de 0 -> não são independentes. 
-#### A regra de decisão continuou sendo o alfa de 0,05 
+#### H0: p=0   -> nÃ£o se correlacionam (sÃ£o independentes) 
+#### H1:p diferente de 0 -> nÃ£o sÃ£o independentes. 
+#### A regra de decisÃ£o continuou sendo o alfa de 0,05 
 #### p-valor<=alpha - rejeito a H0 
-#### p-valor>alpha - não rejeito H0
+#### p-valor>alpha - nÃ£o rejeito H0
 
-## 4. ANÁLISES GRÁFICAS 
+## 4. ANÃLISES GRÃFICAS 
 
 ```{r echo=FALSE}
 # include this code chunk as-is to set options
@@ -127,72 +127,72 @@ final <- readXL("E:/finaL/BASE.xlsX", rownames=FALSE, header=TRUE, na="", sheet=
 
 
 ```{r}
-Boxplot(Tx_Hom~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa", 
+Boxplot(Tx_Hom~Regiao, data=final, id.method="y", xlab="RegiÃµes", ylab="Taxa", 
   col=c("#70DB93"),
-  main="Tx. de Homicídios por Região")
+  main="Tx. de HomicÃ­dios por RegiÃ£o")
 ```
 
 
 
 ```{r}
-Boxplot(Tx_Lat~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+Boxplot(Tx_Lat~Regiao, data=final, id.method="y", xlab="RegiÃµes", ylab="Taxa",
   ylim=c(0,2.5), col=c("#660000"),
-  main="Tx. de Latrocínios por Região")
+  main="Tx. de LatrocÃ­nios por RegiÃ£o")
 ```
 
 
 
 
 ```{r}
-Boxplot(Tx_Lesao~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+Boxplot(Tx_Lesao~Regiao, data=final, id.method="y", xlab="RegiÃµes", ylab="Taxa",
   col=c("#70DB93"), 
-  main="Tx. de Lesão Corporal seguida de morte por Região")
+  main="Tx. de LesÃ£o Corporal seguida de morte por RegiÃ£o")
 ```
 
 
 ```{r}
-Boxplot(Tx_Cv~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+Boxplot(Tx_Cv~Regiao, data=final, id.method="y", xlab="RegiÃµes", ylab="Taxa",
   ylim=c(0,60),col=c("#660000"), 
-  main="Tx. de Crimes Violentos Letais Intencionais por Região")
+  main="Tx. de Crimes Violentos Letais Intencionais por RegiÃ£o")
 ```
 
 
 
 ```{r}
-Boxplot(Bullying~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+Boxplot(Bullying~Regiao, data=final, id.method="y", xlab="RegiÃµes", ylab="Taxa",
   ylim=c(0,30),col=c("#70DB93"), 
-  main="Tx. de praticantes de Bullying por Região")
+  main="Tx. de praticantes de Bullying por RegiÃ£o")
 ```
 
 
 
 ```{r}
-Boxplot(Bullying.Vit~Regiao, data=final, id.method="y", xlab="Regiões", ylab="Taxa",
+Boxplot(Bullying.Vit~Regiao, data=final, id.method="y", xlab="RegiÃµes", ylab="Taxa",
   ylim=c(0,10),col=c("#660000"), 
-  main="Tx. de Vítimas de Bullying por Região")
+  main="Tx. de VÃ­timas de Bullying por RegiÃ£o")
 ```
 
-#### Na intenção de verificarmos graficamente a realidade de nossa hipótese, por regiões, associamos as variáveis qualitativas e quantitativas de nossa base de dados por meio da demonstração gráfica Bloxpot, que oferece uma melhor visualização de resultado para variáveis dessa natureza. Dessa forma, verificou-se uma grande alternância nos números referentes à taxa de homicídios da região Nordeste do Brasil, e esta ainda contendo destaque maior que as outras regiões nessa taxa. Ressalta-se aparente proporção dos dados referentes à região Sudeste, mas tal fato não é em detrimento da realidade da região Nordeste, que tem essa taxa no patamar mais elevado.
+#### Na intenÃ§Ã£o de verificarmos graficamente a realidade de nossa hipÃ³tese, por regiÃµes, associamos as variÃ¡veis qualitativas e quantitativas de nossa base de dados por meio da demonstraÃ§Ã£o grÃ¡fica Bloxpot, que oferece uma melhor visualizaÃ§Ã£o de resultado para variÃ¡veis dessa natureza. Dessa forma, verificou-se uma grande alternÃ¢ncia nos nÃºmeros referentes Ã  taxa de homicÃ­dios da regiÃ£o Nordeste do Brasil, e esta ainda contendo destaque maior que as outras regiÃµes nessa taxa. Ressalta-se aparente proporÃ§Ã£o dos dados referentes Ã  regiÃ£o Sudeste, mas tal fato nÃ£o Ã© em detrimento da realidade da regiÃ£o Nordeste, que tem essa taxa no patamar mais elevado.
 
-#### Apesar do equiparar dos dados das regiões Centro-Oeste, Nordeste e Norte e da admissível proporção nos dados da região Nordeste, percebe-se, apesar de o 3º quartil da região Centro-Oeste e Norte estarem nivelados, a proeminência de dado na região Norte com relação à taxa de Latrocínio. Contudo, com relação à taxa de lesão corporal seguida de morte, a diferença entre as regiões é mínima, tendo em vista a todas as taxas estarem contidas entre 0 e 1% (cálculo por 100.000 hab.). Mesmo assim, é visto que a região que contem o maior valor máximo é a Centro-Oeste.
+#### Apesar do equiparar dos dados das regiÃµes Centro-Oeste, Nordeste e Norte e da admissÃ­vel proporÃ§Ã£o nos dados da regiÃ£o Nordeste, percebe-se, apesar de o 3Âº quartil da regiÃ£o Centro-Oeste e Norte estarem nivelados, a proeminÃªncia de dado na regiÃ£o Norte com relaÃ§Ã£o Ã  taxa de LatrocÃ­nio. Contudo, com relaÃ§Ã£o Ã  taxa de lesÃ£o corporal seguida de morte, a diferenÃ§a entre as regiÃµes Ã© mÃ­nima, tendo em vista a todas as taxas estarem contidas entre 0 e 1% (cÃ¡lculo por 100.000 hab.). Mesmo assim, Ã© visto que a regiÃ£o que contem o maior valor mÃ¡ximo Ã© a Centro-Oeste.
 
-#### A taxa de crimes violentos letais intencionais se destaca na região Nordeste, tendo predominância dos dados no mais alto patamar (entre 75% e 100% dos dados), conferindo certa proporção nos dados entre todas as regiões.
+#### A taxa de crimes violentos letais intencionais se destaca na regiÃ£o Nordeste, tendo predominÃ¢ncia dos dados no mais alto patamar (entre 75% e 100% dos dados), conferindo certa proporÃ§Ã£o nos dados entre todas as regiÃµes.
 
-#### Com relação às taxas de praticantes e vítimas de bullying, empreendem-se numa mesma faixa, sendo as da região Centro-Oeste a mais elevada nas duas variáveis.
+#### Com relaÃ§Ã£o Ã s taxas de praticantes e vÃ­timas de bullying, empreendem-se numa mesma faixa, sendo as da regiÃ£o Centro-Oeste a mais elevada nas duas variÃ¡veis.
 
 ![](E:/mapa.png)
 
-### 4.1 TESTES DE HIPÓTESES
+### 4.1 TESTES DE HIPÃ“TESES
 ```{r}
 library(nortest, pos=15)
 ```
-#### - Violência entre as regiões
+#### - ViolÃªncia entre as regiÃµes
 
-#### Histograma para verificação visual sobre o tipo de distribuição.
+#### Histograma para verificaÃ§Ã£o visual sobre o tipo de distribuiÃ§Ã£o.
 
 ```{r}
 with(final, Hist(Tx_Hom, scale="frequency", breaks="Sturges", col="#70DB93", 
-  xlab="", ylab="", main="Teste de Normalidade - Tx. de Homicídio"))
+  xlab="", ylab="", main="Teste de Normalidade - Tx. de HomicÃ­dio"))
 ```
 
 
@@ -203,7 +203,7 @@ with(final, Hist(Tx_Hom, scale="frequency", breaks="Sturges", col="#70DB93",
 with(final, shapiro.test(Tx_Hom))
 ```
 
-#### A distribuição da Taxa de Homicídio é normal. 
+#### A distribuiÃ§Ã£o da Taxa de HomicÃ­dio Ã© normal. 
 
 
 
@@ -243,9 +243,9 @@ summary(AnovaModel.1)
 with(final, numSummary(Tx_Hom, groups=Regiao, statistics=c("mean", "sd")))
 ```
 
-#### Mediante teste de correlação verifica-se a não rejeição da hipóstese nula, ou seja, a µVARIÁVELnorte = µVARIÁVELnordeste = µVARIÁVELsudeste = µVARIÁVELsul = µVARIÁVELnorte = µVARIÁVELcentro oeste.
+#### Mediante teste de correlaÃ§Ã£o verifica-se a nÃ£o rejeiÃ§Ã£o da hipÃ³stese nula, ou seja, a ÂµVARIÃVELnorte = ÂµVARIÃVELnordeste = ÂµVARIÃVELsudeste = ÂµVARIÃVELsul = ÂµVARIÃVELnorte = ÂµVARIÃVELcentro oeste.
 
-#### - Relação entre a taxa de praticantes de Bullying com taxa de Homicídios
+#### - RelaÃ§Ã£o entre a taxa de praticantes de Bullying com taxa de HomicÃ­dios
 
 #### - Teste de normalidade
 
@@ -253,30 +253,30 @@ with(final, numSummary(Tx_Hom, groups=Regiao, statistics=c("mean", "sd")))
 with(final, shapiro.test(Bullying))
 ```
 
-#### A distribuição da Taxa de Bullying é normal, assim como foi visto anteriormente sobre a Taxa de Homicídio.
+#### A distribuiÃ§Ã£o da Taxa de Bullying Ã© normal, assim como foi visto anteriormente sobre a Taxa de HomicÃ­dio.
 
 ```{r}
 with(final, cor.test(Bullying, Tx_Hom, alternative="two.sided", method="pearson"))
 ```
 
-#### Mediante teste de correlação, verifica-se a não rejeição da hipóstese nula, ou seja, não há correlação entre as taxas praticantes de Bullying e a de Homicídio.
+#### Mediante teste de correlaÃ§Ã£o, verifica-se a nÃ£o rejeiÃ§Ã£o da hipÃ³stese nula, ou seja, nÃ£o hÃ¡ correlaÃ§Ã£o entre as taxas praticantes de Bullying e a de HomicÃ­dio.
 
-#### - Relação entre a taxa de praticantes de Bullying com taxa de Latrocínios
+#### - RelaÃ§Ã£o entre a taxa de praticantes de Bullying com taxa de LatrocÃ­nios
 
 #### Teste de Normalidade
 ```{r}
 with(final, shapiro.test(Tx_Lat))
 ```
 
-#### Observa-se que as duas taxas tem distribuição normal.
+#### Observa-se que as duas taxas tem distribuiÃ§Ã£o normal.
 
 ```{r}
 with(final, cor.test(Bullying, Tx_Lat, alternative="two.sided", method="pearson"))
 ```
 
-#### Vê-se a não rejeição da hipótese nula, portanto não existe dependência entre as variáveis.
+#### VÃª-se a nÃ£o rejeiÃ§Ã£o da hipÃ³tese nula, portanto nÃ£o existe dependÃªncia entre as variÃ¡veis.
 
-#### - Relação entre a taxa de praticantes de Bullying com a taxa de Lesão
+#### - RelaÃ§Ã£o entre a taxa de praticantes de Bullying com a taxa de LesÃ£o
 
 #### Teste de Normalidade
 
@@ -284,42 +284,42 @@ with(final, cor.test(Bullying, Tx_Lat, alternative="two.sided", method="pearson"
 with(final, shapiro.test(Tx_Lesao))
 ```
 
-#### Desta feita, nota-se rejeição da hipótese nula da parte da Taxa de Lesão, logo os dados não seguem uma distribuição normal, que diferentemente é o tipo de distribuição da Taxa de Bullying.
+#### Desta feita, nota-se rejeiÃ§Ã£o da hipÃ³tese nula da parte da Taxa de LesÃ£o, logo os dados nÃ£o seguem uma distribuiÃ§Ã£o normal, que diferentemente Ã© o tipo de distribuiÃ§Ã£o da Taxa de Bullying.
 
 ```{r}
 with(final, cor.test(Bullying, Tx_Lesao, alternative="two.sided", 
   method="spearman"))
 ```
 
-#### Não há rejeição da hipótese nula, o que se traduz por não haver correlação entre taxa de praticantes de Bullying e a taxa de Latrocínio, não haver influência entre ambas as variáveis.
+#### NÃ£o hÃ¡ rejeiÃ§Ã£o da hipÃ³tese nula, o que se traduz por nÃ£o haver correlaÃ§Ã£o entre taxa de praticantes de Bullying e a taxa de LatrocÃ­nio, nÃ£o haver influÃªncia entre ambas as variÃ¡veis.
 
-#### - Relação entre a Taxa de praticantes de Bullying e a Taxa de Crimes Violentos
+#### - RelaÃ§Ã£o entre a Taxa de praticantes de Bullying e a Taxa de Crimes Violentos
 
 #### Teste de Normalidade
 
 ```{r}
 with(final, shapiro.test(Tx_Cv))
 ```
-#### Tem-se a informação a partir do teste de que as duas taxas possuem distribuição normal.
+#### Tem-se a informaÃ§Ã£o a partir do teste de que as duas taxas possuem distribuiÃ§Ã£o normal.
 
 ```{r}
 with(final, cor.test(Bullying, Tx_Cv, alternative="two.sided", method="pearson"))
 ```
 
-#### Constata-se que é rejeitada a hipótese nula, sabendo assim que há correlação entre as taxas de praticantes de Bullying e de Crimes Violentos. Entende-se então a existencia de correlação linear entre as duas variáveis.
+#### Constata-se que Ã© rejeitada a hipÃ³tese nula, sabendo assim que hÃ¡ correlaÃ§Ã£o entre as taxas de praticantes de Bullying e de Crimes Violentos. Entende-se entÃ£o a existencia de correlaÃ§Ã£o linear entre as duas variÃ¡veis.
 
-### 5. Conclusão
+### 5. ConclusÃ£o
 
-#### Constata-se, dessa forma, que, felizmente, nossa hipótese não se concretiza na realidade, logo, mediante os dados, mesmo diante de aumento da violência, o impacto dentro das escolas não é conectado à violência presente na sociedade. Vale ressaltar o apenas um teste de hipótese apontar dependência, apresentando correlação entre crimes violentos e a prática do bullying, o que nos dá o ensejo de não fechar as porta para o assunto, podendo-se pensar em futuras análises com novos dados. Ainda, perante o majoritário dos fatos, por enquanto não é necessária alta inquietude com o status quo, apenas a manutenção do mesmo.
+#### Constata-se, dessa forma, que, felizmente, nossa hipÃ³tese nÃ£o se concretiza na realidade, logo, mediante os dados, mesmo diante de aumento da violÃªncia, o impacto dentro das escolas nÃ£o Ã© conectado Ã  violÃªncia presente na sociedade. Vale ressaltar o apenas um teste de hipÃ³tese apontar dependÃªncia, apresentando correlaÃ§Ã£o entre crimes violentos e a prÃ¡tica do bullying, o que nos dÃ¡ o ensejo de nÃ£o fechar as porta para o assunto, podendo-se pensar em futuras anÃ¡lises com novos dados. Ainda, perante o majoritÃ¡rio dos fatos, por enquanto nÃ£o Ã© necessÃ¡ria alta inquietude com o status quo, apenas a manutenÃ§Ã£o do mesmo.
 
-#### Valendo-se do último quadro, seria proveitoso citar Patrícia Nogueira Pröglhöf,  mestranda em Administração Pública e Governo pela Fundação Getúlio Vargas, que participou do anuário Brasileiro de Segurança Pública do ano de 2016 (base de nossa análise) nos deixando a seguinte reflexão, que com a qual encerramos: 
+#### Valendo-se do Ãºltimo quadro, seria proveitoso citar PatrÃ­cia Nogueira PrÃ¶glhÃ¶f,  mestranda em AdministraÃ§Ã£o PÃºblica e Governo pela FundaÃ§Ã£o GetÃºlio Vargas, que participou do anuÃ¡rio Brasileiro de SeguranÃ§a PÃºblica do ano de 2016 (base de nossa anÃ¡lise) nos deixando a seguinte reflexÃ£o, que com a qual encerramos: 
 
-> Se queremos que o país reduza seus índices de criminalidade e violência devemos, entre tantas medidas necessárias, garantir que a insegurança não prejudique a oferta de educação, o acesso de nossos jovens a ela e a qualidade do aprendizado. Sobretudo, é preciso que  para além dos conteúdos curriculares  o ambiente escolar seja capaz de ensinar pela prática às nossas crianças e jovens que a paz é possível.
-
-
+> Se queremos que o paÃ­s reduza seus Ã­ndices de criminalidade e violÃªncia devemos, entre tantas medidas necessÃ¡rias, garantir que a inseguranÃ§a nÃ£o prejudique a oferta de educaÃ§Ã£o, o acesso de nossos jovens a ela e a qualidade do aprendizado. Sobretudo, Ã© preciso que  para alÃ©m dos conteÃºdos curriculares  o ambiente escolar seja capaz de ensinar pela prÃ¡tica Ã s nossas crianÃ§as e jovens que a paz Ã© possÃ­vel.
 
 
-### 6. Fontes e Referências
+
+
+### 6. Fontes e ReferÃªncias
 
 #### http://www.forumseguranca.org.br/wp-content/uploads/2017/01/Anuario_Site_27-01-2017-RETIFICADO.pdf
 
