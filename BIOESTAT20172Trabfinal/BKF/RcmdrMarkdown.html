@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<title>QUALIDADE DAS AREIAS DAS PRAIAS DO MUNICÍPIO DO RIO DE JANEIRO</title>
+
+<script type="text/javascript">
+window.onload = function() {
+  var imgs = document.getElementsByTagName('img'), i, img;
+  for (i = 0; i < imgs.length; i++) {
+    img = imgs[i];
+    // center an image if it is the only element of its parent
+    if (img.parentElement.childElementCount === 1)
+      img.parentElement.style.textAlign = 'center';
+  }
+};
+</script>
+
+
+
+
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 13px;
+}
+
+body {
+  max-width: 800px;
+  margin: auto;
+  padding: 1em;
+  line-height: 20px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 {
+   font-size:2.2em;
+}
+
+h2 {
+   font-size:1.8em;
+}
+
+h3 {
+   font-size:1.4em;
+}
+
+h4 {
+   font-size:1.0em;
+}
+
+h5 {
+   font-size:0.9em;
+}
+
+h6 {
+   font-size:0.8em;
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre, img {
+  max-width: 100%;
+}
+pre {
+  overflow-x: auto;
+}
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code {
+  font-size: 92%;
+  border: 1px solid #ccc;
+}
+
+code[class] {
+  background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * {
+      background: transparent !important;
+      color: black !important;
+      filter:none !important;
+      -ms-filter: none !important;
+   }
+
+   body {
+      font-size:12pt;
+      max-width:100%;
+   }
+
+   a, a:visited {
+      text-decoration: underline;
+   }
+
+   hr {
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote {
+      padding-right: 1em;
+      page-break-inside: avoid;
+   }
+
+   tr, img {
+      page-break-inside: avoid;
+   }
+
+   img {
+      max-width: 100% !important;
+   }
+
+   @page :left {
+      margin: 15mm 20mm 15mm 10mm;
+   }
+
+   @page :right {
+      margin: 15mm 10mm 15mm 20mm;
+   }
+
+   p, h2, h3 {
+      orphans: 3; widows: 3;
+   }
+
+   h2, h3 {
+      page-break-after: avoid;
+   }
+}
+</style>
+
+
+
+</head>
+
+<body>
+<!-- R Commander Markdown Template -->
+
+<p><body></p>
+
+<p><header id="cabecalho">
+    <H1>QUALIDADE DAS AREIAS DAS PRAIAS DO MUNICÍPIO DO RIO DE JANEIRO</H1>
+    <p><b>Professor orientador:</b><br/>Steven Dutt Ross</p>
+    <p><b>Autores:</b><br/>Fernando Dias - 20161113024 – <a href="mailto:fernandodias@hotmail.com.br">fernandodias@hotmail.com.br</a><br/>Liliana Cioci Ferreira - 20142114014 - <a href="mailto:liciocif@gmail.com">liciocif@gmail.com</a><br/>Thais Mattos Estruc - 20152115600 – <a href="mailto:tm.estruc@gmail.com">tm.estruc@gmail.com</a></p>
+</header></p>
+
+<H2>OBJETIVO</H2>
+
+<p>O objetivo deste trabalho é analisar estatisticamente a qualidade da areia das praias oceânicas e abrigadas dos anos de 2010 à 2015, com base na classificação da Resolução SMAC Nº 468 de 28 de janeiro de 2010, e o mapeamento das praias com elevado percentual de qualidade não recomendada, além de verificar qual o tipo de praia, oceânica ou abrigada, apresenta pior qualidade da areia.</p> 
+
+<H2>INTRODUÇÃO</H2>
+
+<p>A qualidade ambiental das praias tem adquirido grande importância entre os critérios de escolha de destino turístico. Essa preocupação deve-se ao fato de a areia ser um veículo de transmissão e abrigo de parasitas, sobretudo em zonas balneares, onde a utilização da areia apresenta maior relevância.</p> 
+
+<p>A qualidade das areias das praias é influenciada positivamente pelo revolvimento, que areja a areia e renova a exposição aos raios UV (IA SAÚDE). A areia é influenciada negativamente pelas ações antrópicas, como lixo, despejo de esgoto; além de dejetos de animais, principalmente cães.</p> 
+
+<H2>DESCRIÇÃO DA BASE DE DADOS</H2>
+
+<H3>Fonte dos dados</H3>
+
+<p>A base de dados foi disponibilizada pelo Diário Oficial do Município, do portal da prefeitura e acessa em 29 de outubro de 2017. Ela recebeu dados complementares (longitude e latitude) do Google Maps.</p>
+
+<p><img id="data_rio-google_maps" src="data_rio-google_maps.jpg" usemap="#data_rio-google_maps"/>
+<map name="data_rio-google_maps">
+    <area shape="rect" coords="1,1,414,190" href="http://www.data.rio" target="_blank"/>
+    <area shape="rect" coords="424,1,600,190" href="https://www.google.com.br/maps" target="janela"/>
+</map></p>
+
+<H3>Descrição das variáveis</H3>
+
+<p>A base de dados foi feita entre os anos de 2010 e 2015 em 37 praias da Cidade do Rio de Janeiro. As praias de Copacabana e Ipanema, Leblon e São Conrado foram divididas devido à sua grande extensão. Foram coletadas 25 amostras para análises entre os anos de 2010 à 2014 e 21 amostras em 2015. Estas amostras foram divididas em classes de acordo com a classificação da Resolução SMAC Nº 468 de 28 de janeiro de 2010.</p> 
+
+<p>As variáveis analisadas são: 1 – Praia, seu(s) ponto(s) de coleta; 2 – Zona; 3 - Análises; 4 – Tipo de Praia; 5 – Ano,  6 – Longitude e 7 – Latitude. A variável análise possui subdivisões:</p>
+
+<ul>
+    <li>Total de Análises;</li>
+    <li>Análises Ótimas;</li>
+    <li>Análises Boas;</li>
+    <li>Análises Regulares;</li>
+    <li>Não Recomendadas;</li>
+</ul>
+
+<p>O número total de registros é de 217.</p>
+
+<H3>Número de observações</H3>
+
+<p>Foram analisadas 37 praias.</p>
+
+<pre><code> [1] &quot;Arpoador&quot;                         &quot;Barra / Ayrton Senna&quot;            
+ [3] &quot;Barra / Cond. Barramares&quot;         &quot;Barra / Pepê&quot;                    
+ [5] &quot;Barra / Quebra Mar&quot;               &quot;Barra de Guaratiba&quot;              
+ [7] &quot;Bica (Ilha do Governador)&quot;        &quot;Botafogo&quot;                        
+ [9] &quot;Brisa&quot;                            &quot;Central (Urca)&quot;                  
+[11] &quot;Copacabana / Barão de Ipanema&quot;    &quot;Copacabana / República do Peru&quot;  
+[13] &quot;Copacabana / Souza Lima&quot;          &quot;Diabo&quot;                           
+[15] &quot;Engenhoca (Ilha do Governador)&quot;   &quot;Flamengo&quot;                        
+[17] &quot;Grumari&quot;                          &quot;Grumari - Rio do Mundo&quot;          
+[19] &quot;Guanabara (Ilha do Governador)&quot;   &quot;Imbuca (Ilha de Paquetá)&quot;        
+[21] &quot;Ipanema / Maria Quitéria&quot;         &quot;Ipanema / Paul Redfern&quot;          
+[23] &quot;José Bonifácio (Ilha de Paquetá)&quot; &quot;Leblon / Bartolomeu Mitre&quot;       
+[25] &quot;Leblon / Visconde de Albuquerque&quot; &quot;Leme&quot;                            
+[27] &quot;Macumba&quot;                          &quot;Moreninha (Ilha de Paquetá)&quot;     
+[29] &quot;Piscinão de Ramos&quot;                &quot;Pontal&quot;                          
+[31] &quot;Prainha&quot;                          &quot;Ramos&quot;                           
+[33] &quot;Recôncavo&quot;                        &quot;Recreio / Reserva&quot;               
+[35] &quot;São Conrado / Asa Delta&quot;          &quot;São Conrado / Hotel Nacional&quot;    
+[37] &quot;Vermelha&quot;                        
+</code></pre>
+
+<H2>METODOLOGIA</H2> 
+
+<p>As areias das praias do Rio de Janeiro/RJ foram analisadas quinzenalmente pela Secretaria Municipal 2010 até 2015. A amostragem seguiu as normas da Resolução SMAC Nº 468 de 28 de janeiro de 2010, que dispõe sobre a análise e informações das condições das areias das praias no Município do Rio de Janeiro.</p>
+
+<p>As amostras foram coletas entre 6 e 9 horas da manhã, em áreas definidas por pontos centrais georreferenciais, localizados em zonas de areia de baixa umidade, próximas ao mar e não atingidas pela a maré. Para coleta das amostras, foi delimitada uma área retangular de 2m2 e, com auxílio de um cano de PVC de 3,6cm de diâmetro e 15cm de profundidade, foram coletadas 5 sub-amostras, uma no ponto central e 4 nos vértices do retângulo. As sub-amostras foram acondicionadas em sacos estéreis etiquetados, compondo uma amostra. Foram realizadas análises físico-químicas e microbiológicas por um laboratório credenciado pela Secretaria Municipal.</p>
+
+<p><img id="coleta_das_amostras" src="coleta_das_amostras.jpg"/></p>
+
+<p>Além disso, foi traçado o perfil das praias e identificação dos pontos no Google Maps através da longitude e latitude. Todos os parâmetros e estatísticas foram avaliados no Software R-Project, após a importação do banco de dados. A análise crítica de dados foi feita utilizando o Software Microsoft Excel. Foi retirada a distribuição percentual de análises, já que é possível calculá-la na análise estatística, e adicionaram-se os valores de longitude e latitude. É possível baixar as bases de dados mencionadas pelos links na imagem.</p>
+
+<p><img id="analise_critica_de_dados" src="analise_critica_de_dados.jpg" usemap="#analise_critica_de_dados"/>
+<map name="analise_critica_de_dados">
+    <area shape="rect" coords="1,1,200,203" href="https://github.com/fdsantos04/Analise_Areia_Rio/blob/gh-pages/3388_amostras_classe_qualidade_areia_praia_2015.xlsx" target="_blank"/>
+    <area shape="rect" coords="538,1,743,203" href="https://github.com/fdsantos04/Analise_Areia_Rio/blob/gh-pages/BasededadosAreia.xlsx" target="_blank"/>
+</map></p>
+
+<H2>RESULTADOS</H2>
+
+<H3>Perfil das praias</H3>
+
+<p>Baseado na análise dos dados foi possível estabelecer o perfil das praias do município do Rio de Janeiro. As variáveis estudadas para a montagem desse perfil foram: 1 – praia (pontos de coleta), 2 – zona, 3 - tipo de praia, 4 - longitude e 5 - latitude.<p>
+<p>O município do rio de janeiro possui quatro zonas: central, norte, oeste e sul. Apesar de a zona central possuir saída para a baía de Guanabara, ela não possui praias. Seu litoral é formado pela zona portuária e pelo aeroporto Santos Dumont. (Figura 1)<p>
+<img id="Zoneamento_da_Cidade_do_Rio_de_Janeiro" src="Zoneamento_da_Cidade_do_Rio_de_Janeiro.jpg"/>
+<p>A primeira distribuição analisada foi dos pontos de coleta por zona. Ela informa que a zona sul possui a maioria dos pontos de coleta (44,24%), a zona oeste possui a segunda maior quantidade (33,64%) e a zona norte possui o restante dos pontos (22,12%). (Gráfico 1)<p> 
+
+<img src="data:image/png;base64,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" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" width="750" />
+
+<p>A segunda informação analisada foi sobre a distribuição dos pontos de coleta em relação ao tipo de praia, oceânica ou abrigada. São consideradas abrigadas todas as praias que não possuem saída direta para o oceano. Os pontos localizados nas praias oceânicas são maioria (64,52%) contra 35,48% das abrigadas. (Gráfico 2)<p>
+
+<img src="data:image/png;base64,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" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" width="750" />
+
+<p>Comparou-se ainda a distribuição dos pontos de coleta relacionando essas duas variáveis (zona e tipo de praia) - (Gráfico 3). A zona norte só possui praias abrigadas, já as zonas oeste e sul possuem a maior parte das praias do tipo oceânica.<p>
+
+<img src="data:image/png;base64,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" title="plot of chunk unnamed-chunk-7" alt="plot of chunk unnamed-chunk-7" width="750" />
+
+<H3>Análises</H3>
+<p>A Resolução SMAC Nº 468 de 28 de janeiro de 2010 classifica as areias em quatro grupos segundo a sua qualidade (Tabela 1). Essa classificação das areias para recreação foi obtida a partir dos resultados das densidades de Coliformes Totais e Escherichia coli, considerando o mais restritivo.</p>
+
+<table id="tabela1"><caption>Tabela 1 - Classificação da areia</caption>
+<tr><td colspan="2">Areias das Praias - Classificação -</td><td>Coliformes Totais(NMP/100g)</td><td>Escherichia coli(NMP/100g)</td></tr>
+<tr><td>Ótima</td><td>****</td><td>Até 10.000</td><td>Até 40</td></tr>
+<tr><td>Boa</td><td>***</td><td>>10.000 a 20.000</td><td>>40 a 400</td></tr>
+<tr><td>Regular</td><td>**</td><td>>20.000 a 30.000</td><td>>400 a 3.800</td></tr>
+<tr><td>Não Recomendada</td><td>*</td><td>Acima de 30.000</td><td>Acima de 3.800</td></tr>
+</table>
+
+<p>Segundo essa resolução, não é recomendado o contato primário com as areias que possuem: 1 – classificação igual a * ou 2 - sinais de poluição perceptíveis pelo olfato ou visão.</p>
+
+<p>A primeira análise foi feita comparando a qualidade das areias de duas praias, a praia vermelha na Urca e o piscinão de Ramos na Maré. Essas são duas praias são de tipos diferentes; a primeira é oceânica e a segunda é um tipo específico de abrigada, uma praia artificial.</p>
+
+<p><img src="grafico_mov.jpg" usemap="#grafico_mov"/>
+<map name="grafico_mov">
+    <area shape="rect" coords="1,1,252,245" href="https://fdsantos04.github.io/Analise_Areia_Rio/MotionChartID36183044249b.html" target="_blank"/>
+</map></p>
+
+<p>No ano de 2015 todos os pontos de coleta foram analisados vinte e uma vezes.  O mapa 1 informa o percentual de cada uma dessas análises nesses pontos em 2015. O mapa 2 informa qual foi análise (ótima, boa, regular ou não recomendada) foi predominante nesse ano.</p>
+
+<p><img src="ícone_mapas.jpg" usemap="#ícone_mapas"/>
+<map name="#ícone_mapas">
+    <area shape="rect" coords="1,1,252,290" href="mapa1.html" target="_blank"/>
+    <area shape="rect" coords="280,1,528,290" href="mapa2.html" target="_blank"/>
+</map></p>
+
+<H4>Teste de Hipóteses</H4>
+
+<p>A partir das primeiras análises foi possível montar o teste de hipóteses, que nesse caso é um <b>modelo linear generalizado</b>. A sua função assume valores entre 0 e 1, que podem ser interpretados como 0 e 100%.</p>
+
+<ul>
+<li>Intervalo de confiança de 95%;</li>
+<li>Valor de &alpha; = 0,05;</li>
+<li><b>H0</b>: ano e tipo de praia não interferem no percentual de análises não recomendadas;</li>
+<li><b>H1</b>: há interferência.</li>
+</ul>
+
+<p>A partir das primeiras análises foi possível montar o teste de hipóteses, que nesse caso é um modelo linear generalizado. A sua função assume valores entre 0 e 1, que podem ser interpretados como 0 e 100%.</p>
+
+<p>A Equação do modelo linear generalizado informa como o valor médio (ou esperado) de uma variável dependente y está relacionado com duas variáveis independentes x1 e x2.</p>
+
+<ul>
+<li><b>y=ln(P/(1-P))=&beta;0+&beta;1x1+&beta;2x2</b></li>
+<li><b>y</b> = Probabilidade de análise não recomendadas;</li>
+<li><b>x1</b>  = ano;</li>
+<li><b>x2</b> = tipo de praia;</li>
+<li>Os valores de <b>&beta;0</b>, <b>&beta;1</b>, e <b>&beta;2</b> são constantes e estimados a partir de dados da amostra;</li>
+</ul>
+
+<p>O resumo do modelo logit, criado no software R-Project, informa sobre os valores das constantes &beta;0, &beta;1, e &beta;2 e do P-valor das duas variáveis. Com a interpretação desses dados foi possível verificar as hipóteses.</p>
+
+<pre><code>
+Call:
+glm(formula = cbind(Não.Recomendadas, Total.de.análises - Não.Recomendadas) ~ 
+    Ano + Tipo.de.Praia, family = binomial(logit), data = Areia)
+
+Deviance Residuals: 
+    Min       1Q   Median       3Q      Max  
+-4.1626  -1.9344  -0.4277   1.1211   6.1373  
+
+Coefficients:
+                          Estimate Std. Error z value Pr(&gt;|z|)    
+(Intercept)                8.41357   39.98091   0.210    0.833    
+Ano                       -0.00462    0.01987  -0.233    0.816    
+Tipo.de.Praia[T.Oceânica] -0.54930    0.06727  -8.166 3.19e-16 ***
+---
+Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+
+(Dispersion parameter for binomial family taken to be 1)
+
+    Null deviance: 1044.65  on 216  degrees of freedom
+Residual deviance:  978.65  on 214  degrees of freedom
+AIC: 1588.4
+
+Number of Fisher Scoring iterations: 4
+</code></pre>
+
+<p>O valor do P-valor da variável ano é 0,816, um número maior que o valor de &alpha; (0,05). Nesse caso, não há rejeição da hipótese nula (H0) e o ano não interfere no percentual de análises não recomendadas.</p>
+
+<p>O valor do P-valor da variável tipo de praia é 3,16e-16, um número muito menor que &alpha; (0,05). Nesse caso, ocorre rejeição da hipótese nula (H0) e tipo de praia interfere no percentual de análises não recomendadas.</p>
+
+<p>Valores das constantes e análise de P-valor:</p>
+
+<ul>
+<li><b>y=&beta;0+&beta;1x1+&beta;2x2</b></li>
+<li><b>y=8,4-0,004*Ano-0,549*Tipo.de.Praia</b></li>
+</ul>
+
+<table><caption>Tabela 2 - Dados da equação</caption>
+<tr><td>xi</td><td>&beta;i</td><td>&alpha;</td><td>P-valor</td></tr>
+<tr><td>x1 = Ano</td><td>&beta;1 = -0,004</td><td>0,05</td><td>0,816</td></tr>
+<tr><td>x2 = Tipo.de.Praia</td><td>&beta;2 = -0,549</td><td>0,05</td><td>3,16e-16</tr>
+</table>
+
+<p>Foram criados ainda dois gráficos de efeito das duas variáveis:</p>
+
+<p><img src="data:image/png;base64,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" title="plot of chunk unnamed-chunk-9" alt="plot of chunk unnamed-chunk-9" width="750" /></p>
+
+<p>Pela análise do gráfico de efeito do ano é possível observar que: 1 - a probabilidade de análises não recomendadas está entre 22 e 23% nos cinco anos; 2 - a variabilidade é maior em 2010 e 2015 e menor em 2012 e 2013 - quanto menor a variabilidade, maior é a certeza. A inclinação da reta é extremamente pequena, pois sua constante é próxima de zero.</p>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAkAAAAJACAMAAABSRCkEAAAAolBMVEUAAAAAADoAAGYAOmYAOpAAZmYAZrY6AAA6ADo6AGY6Ojo6OmY6OpA6ZmY6ZrY6kJA6kNtmAABmADpmAGZmOgBmOpBmZjpmZmZmZrZmkNtmtrZmtv+QOgCQOjqQOmaQkDqQkLaQ2/+2ZgC2Zjq2Zma2tma225C2/7a2/9u2///bkDrbtmbb25Db/7bb////AAD/tmb/25D/29v//7b//9v////8jpMCAAAACXBIWXMAAAsSAAALEgHS3X78AAAWXUlEQVR4nO2dC5ubyJVAaUerXs86G8keT3ZD24mYZD1mYw2KxP//a6F4Cb1QFbeAquKcr0eNHhRqc6ZuXepBlAMIiOb+AuA3CAQiEAhEIBCIQCAQgUAgIiiBTm9RyX9s333v+dhxu9pfvVDuFt987lExh9foZVc+3L6XXBVzVcr1274TpEDr/o89EuieDvdJlGzJjXHtW5eFdwW6v5PHBCVQruqGQg51zk5v7/4RReW5Sws5NvX7yrG/lAKl5zqnMiqJNqe3l18Kj7LKpvLUZ12zqn1KT//wc/FQ7NYUo15UR238bY9fCVR9h/PbwRCwQGWtUjxLOrXS9auVVx2B1Js/ttVnVDHHerv8XL1PV6CmmKrgd791BIrOpTTfAYGcpyvQRsWm+PBaViZVLXJ4Lc5mWpzW8nNFLVFGlzaEFTvVp7eSp3m7+n3epw1h7UtlweqVJka1x1d7n78DIcxxuiGsjBybrHQirU5c+URVOFnUafZUAhXbRQhrX2gEqrarnZt9WoHal7ImSJ4Fqo+vSjl/BwRynIEC1TGqEqhIr6JGoGa72rlPoLrqQiC/MQphDVcCFWe9/KAqptluyy65DGGdgjeEMM/paUTfe7VpKV8IVFUrlUDNdvl2ct45bi2qXqob0WVz+XEjOm/fDoaABVJpdClGncaXZ1Kd1z/VSVf59h2B1FubtKo7mu2q9Hqf7nWg5iW1Uce/8ml7/G4af347GEITqKXJsJZ6/KlAoECPPxUIFOjxpyJYgWAaEAhEIBCIQCAQgUAgAoFABAKBCAQCEQgEIhAIRCAQiEAgEIFAIAKBQAQCgQgEAhEIBCIQCEQgEIhAIBAxnkCo6Q+Cc4VAgEAgBIFABAKBCAQCEXMJFMESGFEgyc7gCQgEIhAIRCAQiEAgEIFAIAKBQAQCgQgEAhEIBCImFuj3WySHgNmZqwbCm0BAIBCBQCACgUAEAoEIBAIRCAQiEAhEIBCIQCAQgUAgAoFABAKBCAQCEQgEIhAIRCAQiEAgEIFAIAKBQAQCgQgEAhEIBCIQCEQgEIhAIBCBQCACgUAEAoEIBAIRCAQiEAhEIBCIQCAQgUAgAoFAhECgJHrZ1RtR3HmqtTMCBcJwgbLVvvhRG+v8+Ol7+1SvaAQKhOECpRvlTbVdbHSfatzLDoECof9c9woU56evlTFJtOk+1dgZgULBTg1UPLl4+rxoBAoEbYGysqaKOy+0baCNEog20DLRFCiL1urX6a2jUJl2HT/vVRa2JgtbKHoCKU1q/v79wWfNikagQOBCIojQFihd7dOLNpCsaAQKBF2Bjh93xc/hvXYAQ6BloC3Qp+9FHYRAcIV+CCuSrIwQBlfQiAYRCAQiDEKY4h1tILjAIAvL1nm6tlU0AgWCQRZW/VgqGoECQVeg05dd8UMaD1dot4EKd7Io2tgqGoECgSwMRMwj0LMBr+ANmsM5tvXQVztpvMaYafAE7RooUc0fO2l8FGFQMBik8e2jtGgECgjtNP6trIEuRz0PKzpCoIDQDmGntyiKTCIYNdAimCMLQ6CAmCWNx6BwmKc3vpIHgwJg1t54KiH/mbc3HoO8Z+7eeAzynNl74zHIb+bvjSeMec38AmGQ18zSG59fjQfCIH+ZozdecTmgDIO8ZY7eeMXViETCmK/M0Btfcj2kFYM8ZY7eeMXtmGgM8hIHsrD28xjkIQ4JRBjzEW2BsgnmxmOQf2hnYVuTpYGeF/1gXhgG+YZZGm+v6EcTC6mEPMPsQqK9oh/OTMUgv9APYZOtD4RBPuFSFtbuiEH+4KJAhDGPMLkSvfrxcff4s2ZF96/OgUHeYNAXdvhwfT8eQdHPlnfBIE8wSOMLgSZc4g6D/MCsBhqvN/7O7ijkA2a98Sb+iFcowyAfcDILa0vAIOdxqjP1tggMch2Dqc1Wi9ZcZJMw5jqudabeFIJBbqO/OsdEnam3xWCQywiWd2lu06zys9V+vLs2Y5DLDG8Dne8br+75HY9433jCmMMMbwMVMe38Yhqrjo5m0obG+mNGK9VjkLv0n+u+NlAa56evtUBKnez6MqM9gQhj7jJ8QFmnBkrW5aznq9WDbApEJeQqw69Et42e05sab38R0Z4XbXyzFQxyE0FXRpl2HT/vE3VuNyoXu5y4YVcgwpibONyZelsgBrmHK4sr6JWIQs7hyPIuukVikGt4VQPlhDHn8KkNVJWKQU7h9ICy+8WikEv4JxAGOYXBiMQ4T18mmhf2rGQMcgaz3nj7tzoYBgY5g34Wpi4zTzex8FnZKOQI2iGs7E01GVM/qkAY5AoeNqKb4jHIBfwVCIOcwM3VOTQPgELz4+rqHHpHwKDZcXZ1Ds1jYNDMuLs6h+ZBMGhevOtMvTkKCs2Kx1lYcxgMmhNDgf7lWggrD4RB86Ep0OFVXYU+vUmXd/n9Fv0CHx8JhWZDTyA1HjFd30wdlBRtFQyaDT2BVPp+3EZm91uZ9JRi0EwYCGS6xNS0ZxSD5sFAINMlpiY+oYSxWQhHIAyaBU2BtvUqHtYW2RwFDJqeuS4kjgMGTU5YAhHGJsdMIHu98WOBQRMTWA2UE8YmJjyBMGhS5hrOMSaEsQmZa3WOUcGg6ZhrfaCRwaCpCLIGyjFoMkJsA1VHR6FJCDALaw6PQVMQrkCEsUnQE6ho+9zerUdW9BRQCY2P7nCObx932Vrdz8BW0ZOAQaOjJ1C2KRL46sdW0ROBQSOjJ9Dh/W9fdqcvO3srlE0GBo2LdiO6cCeLIpP7Xjpy4ghjoxJyFlaDQWOyAIEIY2MS1Jjoh2DQaBjVQKnR1EKXzhlhbCwMBDpujRZpdUogDBoLfYFSoxTsadGTg0GjoD0eyLD6eVr09GDQGGgKlJlWP0+LngHC2AgsIwurwSD7LOI60BkMss3CBMIg2yxNIMKYZQQCJVF1/zk1Wnq1L9L86HK0kKPnCYOsMlygbFXf+SArvEni6lG/6BnBIIuYCJRurp6dx5elcfrncw1Up2y2vqN1nP5yntF/rnsFivPT11qgovpJ1uVLD3d2CgyyhpUaqJEnu/iA06cIgyxhoQ1U307VpxooxyBbSLOw4+d9ogLCRmVhl90djp8gwpgVFncd6AwG2WDBAhHGbKAtUDU51dcRiQ/AIDHa44E+7oofD+eF9UMYk6It0KfvRR0UnEAYJEU/hBU5VxZaCFNgkIhFN6IrMEgCAhHGRGgLdHqLVj+Mbhnmz0nBoOHoClTdNz7zZpFNQzBoKAZZWCGQf+sD6YJBAzGrgfxZ5tcYwtgwTNpAXi3zawwGDYIs7AwGDQCBOlAJmbPsztRrMMiYhXem3oBBhiy9M/UGDDKDztRrCGNG0Ii+AYNMQKA7YJA+musDffq2DWB9IG0wSBtqoLsQxnRBoPtgkCaaISyMJe6MwCAtqIEegkE6INBjCGMaGFxIXFgIyzFIBz2BflUdYR7e8lIMBj1DT6DT12+e3vJSCgY9QXtIq6+3vJRCGOtHuw3k7S0vpWBQL2Rhz8GgHhBIAwx6jLZA2QLT+BbC2EO0RyRuTcaSaRTtFxj0CIMhrXaL9g0Muo92CEuM7zgX2D84ldBd9EPYkttAJRh0D7IwAzDoFgQyAYNuoDfeCMLYNQYzU5fYG38DBl1hkMYvsjf+Fgy6gN54YzCoC73x5hDGOpCFDQCDziDQIDCowUwgGtENGFRDDTQQwlgFAg0Fg0q0BQr5VgcDwaDc4DpQ2Lc6GAYGGV2JDvpWB8MgjBnWQAHf6mAYGGTSBgr7VgcDWbpBZGFSFl4JIZCYZRukJ9ASVygzYMkGmc3KuBhQlkQv5WUh1ToqG0fp5tHOobNgg8zmhXXT+GxVXxbKCquSWM1dXaxACw5jBml8Xt6yp32lqG/OPqVxfvjw/41Adbyz+03dZml/b0v/ub5O47sRrHDm9LUWqKiECpmy5dZA+WLD2PAsrFMDJet61saFQUv791ymQcMFattAp7d63YVl10ALDWOCAWVlFnb8vE+aumfpAi3SIC4kWmV5BiGQXRZnEFeiLbO0MEYNZJuFGYRA9lmUQazOMQJLMojVOcZgQWGM1TlGYTkGsTrHSCzFIFbnGIuFVEJkYaOxDIOGDygTFr0ElmCQ4ZVo5oUZsQCDzGogi0Uvg/DDGG2gcQneIGamjk3gBg0fVC8sejmEbRBZ2PgEHcaogSYgZINoA01CuAaRhU1DsAZpXkg0vwqEQJeEGsYQaCoCNQiBpiNIg5iVMSEhGkQNNCUBhjEEmpTwDEKgiQnNIK4DTU1glRACTU5YBiHQDIRkEALNQUAGmQl03Eb6c1OD+TcagXDCGDXQPARjEALNRSAG6a/OsdqnURRbKxrCMMhgdY7ih7nxNgkijBmMiS7qIASySggG6Yew6GWXEcIs479BNKLnxXuDEGhmfA9jBiGMAWWj4LlBBlkYaySOhNcGGWRhrJE4Fj4bpD0zlTUSR8TjMKbdBmKNxDHx1yCyMEfw1SAEcgVPDWJemDP4Gca0a6Db+8bLioYbvDTIII3PWWBqbDw0SDuNZ4GpKfCvEtIOYTf3jRcWDXfxziCyMNfwzCAEcg6/DKI33j28CmP0xjuITwbRG+8k/hhEb7ybeGMQvfGO4ksYIwtzFU8MQiB38cIgeuMdxgeDBL3xSfSyU79VJ8dqXz3qFw0aeBDGhvfGZ6t9VhqTFVYlcfWoXzTo4L5Bw3vj003HpzQ+P1Z/tvN/uSe4/u/Yf677euMLW05fa4Gy9fnx3s4wHMcNGp6FdWqgZH1+1C0adHG7Mh8uUNsGOr3F7aN+0aCN0wZpC5TdpPFlFnb8vE/UG5vqUb9oMMBhg7SzsK3J0kAaRYMJ7lZCZmm8xaLBCGcNMruQaLFoMMRRg/RDGF0ZM+OmQXSm+oOTYQyBPMJFg0zmha1+fNxZKxqG4J5BBn1hhw/1lUMrRcMgnDPIII0vBGJQ/ey4FsbMaiDmxs+PYwaZzY038QeBxsIpg8jCPMQlgwSdqbKiQYBDYcxgarPdokGCOwbRmeoprhikvzoHnalu4YhBLO/iLW6EMdpA/uKEQbSBfMYBg2gDec38lRADyvxmdoO4Eu07MxuEQN4zr0F0pvrPrGFs+OIKwqLBHnMaNHx5F2HRYJP5DKIGCoPZDKINFAhzhTGysFCYySAECodZDDIYkRjn6QvzwlxmDoPMeuO51YHbzBDG9LMwtT4QEwsdZ3qDtENY2Ztq0peKQLMwtUE0okNjYoMQKDimDWOszhEekxrE6hwhMqFBrM4RJNNVQqzOESaTGURnaqhMZBBZWLBMY5ChQP8ihPnDJGFMU6DDq7oKfXpjWo9PTGGQnkBqPGK6zmgD+cb4BukJpNL34zYyu98KAjmAwKDfb7l3gP7D179LgUyXV0AgF7AQxu55cy6//+j171Ig0+UVEMgJ5AYh0MKRGmRDoG19c16yMB8RGmRBoEEgkDPIwhgCgcggiwLRG+8tkny+t9z+ow49pnhnsM1wgxAIFIPDmB2BGM7hPUMNsiIQq3OEwDCDrAjE+kBBMMggaiBoGRLGaAPBmQEGkYVBF2ODEAguMK2ELAhUtH24W084GBpkZTjHt4+7bJ2na4PjIpC7GBlkQaBsUyTw1Y/+cRHIYUwMsiDQ4f1vX3anLztWKAsGgzBmpxFduJNFkck9nxDIafQNGisLS6JqzU11hWi1b59qFg2zo2vQSAJlq3q1l6JxnSdx+1SzaJgfTYNGGhOdbjpdY2ncfVp/WOfLwZzonaV+gXrP9dXraXdqYRrnp6+1MSrD7zy9uzM4iJZBtkLYcXtxGbFT5STrqwpJo2hwAw2DLAmUXqVgbaOnXUKaNpCPPDfIznig7U0vRpl2HT/vE1UPbsjCfOVpGLMhUGZ0BUinaHCGZwYxMxWe0G8QwzngGb0G2aiB/qd96e/adRACeURfGLPTBioHcpzeDBaZQiCf6DHITgjLyjaQyRplCOQXDw2iDQRaPKqEEAj0eGAQaTzoctcgOzVQUk4sZEx04NwziKnNoM+dMMbUZjDg1iCLU5tNIhgC+cq1QWRhYMaVQQgEhlyGMZtXoknjl8GFQZYGlJndaeVp0eA2HYMspvFmX8F0B3CJs0EWLySafQPTHcAp2jBmKYTRBloajUFkYTAQZdCTEdMIBD1EDY8/0b9//fv46RshbJE8NYgaCPpAIJAQ2ROIztRFYk0ghnMsE2sCMaBsodjJwnKGtC4WK9eBGFS/ZLgSDSIQCETYGlAW5+nVElL9IFAg2OmN/6jcYaX6JWJpWk+9EKL+cREoEOyEsDIRM0nCECgUaESDCAQCEQgEIhAIRCAQiEAgEIFAIAKBQAQCgQgEAhEIBCIQCEQgEIhAIBCBQCACgUAEAoEIBAIRCAQiEAhEIBCIQCAQgUAgAoFABAKBCAQCEQgEIhAIRCAQiEAgEIFAIAKBQAQCgQgEAhEIBCIQCEQgEIhAIBAxlkBJ1CxcX94F6vxUq2jwhpEEylb7et3xTK0ffX6qVzR4w0gCpZv6/nOnv52+fs8PH/ZZczexZzcpA6/oF6j3XPcKFOdKHEX5O4uu7oOAQH7z+y13PmWhBqoEStfXt2JBoCVgow1UCbS5vqMqAi0BaRZ2/LyvBFK3BY8NioYw4DoQiEAgEIFAIAKBQAQCgQgEAhEIBCLGFAiWwHgCzVQy2EZwrhAIEAiEIBCIQCAQgUAgwkmBYBEgEIhAIBCBQCACgUAEAoEIBIL0asa6EXYEKueLHf67fnY1+Ufxq+ArgkXU1Jp3l6fn+Okf63bz5sw9w45AyZ83HYHugEBucNzGeZ69M9bkMVYEOn7+Uah7+OM2WufpT+++ffpeiP7ul12eRMUrxeN5G2Yl26jHdJOnUbTaF6dkk1cn5vDTa/GCqoGadzRPlhWB0lj9qDiWxOlaVYRqFuvHXVEnnb7ssvV528bRYDhpOTM02xw+7Iv/1dfqherEFC8Uj8WZK9/5o/7JsiHQcRspaw//q75aNQE6icuwVdj8sks72xaOBgKaGqj8narhhpvqxKj2x69KoPoT2ifLhkDloi9JrNwtaqDNuQYqHqsaqHisti0cDQQ0bSB1rrKoiWeqBmoEat6ZsAaqDpWt/lmE0XW9BEPVBjq8Ri+/xGqK/U/NNsxLk4Wl6lfR0oni6sS0ApXv/J/+yRrpOtDtSh4QJiMJpETfjFM0OAVXokEEAoEIBAIRCAQiEAhEIBCIQCAQgUAgAoFABAKBCARqUL0valjKP9/f78M7vXV6Fw+v1VCIDocH+wUOAnXodeBSIPXJ40eGpyBQl2puwPvvx09/LcdTHbfNAPRi6w8/x+cXyk8WSh3+6+d331V1VA3IrLYWBQJ1aAXarvZq5Hmyyeu7zaitQo3iV7o+f/I/d4fXuKyIiudqv2pr3j9iYhCow1mgOK9GCNdhSm0V9Y16Ug1zqtpAcauLGspXbS5tGBQCdWgFUtYksXpaDbcs30jicvD3S/tC+ztRw/uqz9zMugodBOrQFehuDdTWLl2BVH1Vh7BtTAhbMucQti4bP/faQNULXYHK/4rmUOmQ2przT5gcBOpwroF+6WRhZSR7a7Kwl6bFfN4jjdSbarPamvmvmBYEugMXePRBoDsgkD4IBCIQCEQgEIhAIBCBQCACgUAEAoEIBAIRCAQiEAhE/BtB2MpivRXMyQAAAABJRU5ErkJggg==" title="plot of chunk unnamed-chunk-10" alt="plot of chunk unnamed-chunk-10" width="750" /></p>
+
+<p>O gráfico de efeitos do tipo de praia informa que a probabilidade de análises não recomendadas nas praias abrigadas é de aproximadamente 29% contra aproximadamente 19% das oceânicas. A reta é decrescente, o que está de acordo com o valor da sua constante.</p>
+
+<H2>DISCURSSÃO</H2>
+
+<p>Podemos citar como causas principais da poluição verificada em pontos da praia da Barra da Tijuca o elevado índice de poluição do complexo lagunar que através do Canal da Barra segue em direção ao mar. A ocupação desordenada nas encostas faz com que diáriamente os rios e lagoas da região recebam sedimentos e lixo provocando o assoreamento da saída dos canais.  O acúmulo de lixo, a proliferação de plantas aquáticas com a contaminação por esgoto, agravada pela ressaca que ao remexer o fundo das lagoas libera gás sulfídrico e metano proveniente do excesso de lixo são os principais causadores da poluição nestas praias.</p>
+
+<p>As praias de Botafogo e Flamengo recebem a contribuição dos rios Berquó e Banana Podre canalizados e subterrâneos além da galeria de cintura que recolhe água de drenagem pluvial e dos rios. A galeria de água pluvial recebe lixo e esgoto clandestino além de poeiras e outas partículas. O Rio Berquó por passar debaixo do Cemitério S. João Batista recebe necrochorume devido à infiltração em suas galerias.</p>
+
+<p>As praias da Ilha do Governador estão localizadas próximo ao Complexo Petroquímico do Rio de Janeiro e de região de intensa atividade industrial e ainda sofrem as sequelas catastróficas do despejo de 6 milhões de litros de petróleo bruto na baía pelo navio-tanque iraquiano Tarik Ibn Ziyad (1975) e do vazamento de um oleoduto da Reduc que liberou 1,3 milhão de litros de petróleo na água (2000).</p>
+
+<p>Comparando as praias Vermelha, na Urca, piscinão e a praia de Ramos, ambos na Maré podemos destacar algumas observações. A primeira é que a quantidade de pessoas influência negativamente a qualidade da areia, as areias do piscinão e da praia de Ramos possuem qualidade muito diferentes. Essa última recebe menos pessoas e possui qualidade melhor. A segunda é que praias abrigadas possuem qualidade de areia pior que as oceânicas, isso ocorre devido a menor taxa de renovação das suas águas.</p>
+
+<p>Podemos encontrar em praias contaminadas o fungo <i>Trichophytone</i>, as bactérias <i>Escherichia coli</i> e <i>Salmonella</i>, o vírus da hepatite A, o verme <i>Ancylostoma caninu</i> e a pulga <i>Tunga penetrans</i>. Os sintomas de contaminação mais comuns são: dermatofitoses, náuseas, diarreia, febre, dores musculares e nas articulações, perda de peso e cansaço.</p> 
+
+<H2>CONCLUSÕES E RECOMENDAÇÕES</H2>
+
+<p>A qualidade da areia se relaciona com a qualidade da água, praias com águas mais limpas tendem a ter qualidade da areia melhor. As praias abrigadas possuem, portanto amostras de areia piores do que as oceânicas, isso ocorre porque a renovação das suas águas é mais lenta. Outro fator importante é a quantidade de frequentadores e a presença de animais, normalmente quando mais pessoas a praia recebe, pior é a qualidade da areia. A presença de animais também influência negativamente a qualidade da areia, pois há risco de contaminação por fezes. Ao longo dos anos de 2010 à 2015 não houve mudança significativa na qualidade da areia.</p>
+
+<p>Recomendamos que a prefeitura, ou qualquer outro órgão competente, volte a fazer o controle da qualidade das areias e disponibilize os resultados para a população através de um site ou pela mídia. Não recomendamos a construção de praias artificiais em uma cidade litorânea como o Rio de Janeiro, já que a sua manutenção é difícil. A qualidade da areia do piscinão de Ramos piorou ao longo dos anos, tornando-se a praia com a pior qualidade de areia.</p>
+
+<H2>REFERÊNCIA BIBLIOGRAFICA</H2>
+
+<p>ANDERSON, David R. Análise de Regressão. In <b>Estatística Aplicada à Administração e Economia</b>. 2ª edição. São Paulo: Editora Pioneira Thomson Learning, 2005.</p>
+
+<p>e-Disciplinas. <b>Análise Multivariada - Aplicada à Contabilidade</b>. Disponível em: <https://goo.gl/6GYBKD/>. Acesso em: 01 de dezembro. 2017.</p>
+
+<p>G1. <b>Areias das praias do Rio estão sem controle de qualidade há mais de um ano</b>. Disponível em: <https://goo.gl/khHnke/>. Acesso em: 01 de dezembro. 2017.</p>
+
+<p>Instituto de Administração da Saúde (IA SAÚDE) – Região Autónoma da Madeira. <b>Areia das Praias</b>. Disponível em: <http://www.iasaude.pt/index.php/saude-vigilancia/areia-da-praias>. Acessado em: 25/11/2017.</p>
+
+<p>Stack Exchange. <b>GLM for proportion data in r</b>. Disponível em: <https://goo.gl/sRGtMN/>. Acesso em: 01 de dezembro. 2017.</p>
+
+<p></body>
+<footer id="rodape">
+</footer></p>
+
+</body>
+
+</html>

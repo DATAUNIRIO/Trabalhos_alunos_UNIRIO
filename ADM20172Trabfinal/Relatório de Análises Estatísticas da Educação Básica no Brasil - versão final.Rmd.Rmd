@@ -1,0 +1,535 @@
+<!-- R Commander Markdown Template -->
+
+Relatório de Análises Estatísticas da Educação Básica no Brasil
+=======================
+
+### Karina Silva, Luís Fernando Moreira e Renata Richter
+
+### `r as.character(Sys.Date())`
+
+```{r echo=FALSE}
+# include this code chunk as-is to set options
+knitr::opts_chunk$set(comment=NA, prompt=TRUE, out.width=750, fig.height=8, fig.width=8)
+library(Rcmdr)
+library(car)
+library(RcmdrMisc)
+```
+
+
+```{r echo=FALSE}
+# include this code chunk as-is to enable 3D graphs
+library(rgl)
+knitr::knit_hooks$set(webgl = hook_webgl)
+```
+<head><style>
+
+</head></style>
+
+<center><a href="http://pt-br.tinypic.com?ref=14j9bom" target="_blank"><img src="http://i66.tinypic.com/14j9bom.jpg" border="0" alt="Image and video hosting by TinyPic"></a></center>
+<br><br>
+<br><b>1.Introdução</b><br>
+De acordo com a Lei de Diretrizes e Bases da Educação de 1996, educação básica compreende a educação infantil, o ensino fundamental e o ensino médio. Essa tem por finalidade promover a “formação comum indispensável para o exercício da cidadania”, além de fornecer meios de prosseguir nos estudos e/ou trabalho. Busca-se por meio deste relatório, em um primeiro momento, comprovar a importância da educação básica a partir do impacto que causa nos Estados e na sociedade como um todo, indo de frente com o tratamento negligente com que a atual gestão vem tratando o tema. Ainda pretende-se identificar as variáveis que afetam a qualidade de tal educação no Brasil, analisando a eficácia das políticas públicas relativas à educação e o impacto da PEC, a qual congela por vinte anos gastos em educação e saúde.
+<br><br>
+<br><b>2.Objetivos</b><br>
+<br><br>
+2.1 Analisar o impacto da educação básica no Brasil através das hipóteses a seguir:<br>
+- Estados com maior gasto em educação têm maior qualidade de vida.<br>
+- Estados com maior média de anos de estudo possuem maior renda per capita.<br>
+- Estados com notas maiores no ideb possuem menor taxa de criminalidade.<br>
+<br><br>
+2.2 Identificar as variáveis que afetam a qualidade da educação básica no Brasil a partir das hipóteses a seguir:<br>
+- Estados que gastam mais com educação possuem melhores oportunidades educacionais.<br>
+- Estados com mais escolas têm maior ideb.<br>
+- Estados com maior ioeb possuem maior média de anos de estudos.<br>
+<br><br>
+<br><b>3.Metodologia</b><br>
+Por meio do programa R, esse trabalho analisará gráficos, tabelas e testes de hipóteses. Com a utilização destes, as hipóteses anteriormente citadas poderão ser cientificamente confirmadas ou negadas, o que tornará possível o planejamento de uma política pública eficaz na área de educação.<br>
+A base de dados foi montada com dados relativos ao ano de 2016 retirados de reportagens e pesquisas cujas fontes se encontram na bibliografia. Ela apresenta 28 linhas, sendo cada uma composta por um Estado-membro da federação mais o Distrito Federal. Ela ainda é composta por 18 colunas sendo elas:<br>
+<br><br>
+<center><a href="http://pt-br.tinypic.com?ref=110m0ic" target="_blank"><img src="http://i64.tinypic.com/110m0ic.jpg" border="0" alt="Image and video hosting by TinyPic"></a></center>
+<br><br>
+Em um primeiro instante, as hipóteses serão analisadas através de gráficos e estatísticas. Visto que os questionamentos presentes neste relatório giram ao entorno de variáveis quantitativas, o gráfico que será usado será o diagrama de dispersão. Por meio dele e de sua linha de quadrados mínimos será possível identificar se há ou não correlação entre as variáveis e se estas mesmas apresentam correlação positiva ou negativa. Buscando ainda mais informações, foram adicionados ao gráfico boxplots marginais que permitem vizualizar os quartis e medianas de cada variável.<br>
+Pelos mesmos motivos que levaram à escolha do diagrama de dispersão como gráfico a ser utilizado, a estatística adotada é a matriz de correlação. Essa estatística fornece o coeficiente de correlação que varia de -1 (indica relacionamento negativo) a 1 (indica relacionamento positivo).<br>
+Posteriormente, uma vez que gráficos e estatísticas abrem espaço para interpretações subjetivas, também serão realizados testes de hipóteses. Esses permitirão um estudo mais eficiente e objetivo. No entanto, para a realização de tais testes é necessário verificar se cada variável apresenta ou não uma distribuição normal de informações. Para que isso seja possível serão feitos, por meio do programa R, testes de normalidade. Seus critérios serão:<br>
+ H0: a distribuição é normal<br>
+ H1: a distribuição não é normal<br>
+ alfa=0,05<br>
+ p-valor menor ou igual a alfa => rejeita-se H0<br>
+ p-valor > alfa => não se rejeita H0<br>
+Caso todas as variáveis apresentem distribuição normal, o teste de hipótese a ser aplicado será o de Correlação de Pearson. Este é o melhor teste que pode ser utilizado, entretanto, durante seu cálculo, pressupõe distribuição normal, por isso a restrição para usá-lo. Caso ao menos uma das variáveis não possua distribuição normal, o teste a ser aplicado será o de Correlação de Spearman.Critérios para ambos os testes de correlação:<br>
+ H0: p=0 => são independentes (não há correlação)<br>
+ H1: p diferente de 0 => não são independentes<br>
+ alfa=0,05<br>
+ p-valor menor ou igual a alfa => rejeita-se H0<br>
+ p-valor > alfa => não se rejeito H0<br>
+
+<br><b>4.Análise</b><br>
+<br><br>
+
+4.1 Impacto da educação<br>
+<br><br>
+1ª hipótese: “Estados com maior gasto em educação têm maior qualidade de vida.”<br>
+
+<u>Gráfico</u>
+
+```{r}
+scatterplot(Qualidade.de.Vida~Gasto.com.Educação, reg.line=lm, smooth=FALSE, 
+  spread=FALSE, boxplots='xy', span=0.5, ellipse=FALSE, levels=c(.5, .9), 
+  xlab="Gasto 
+  com Educação", ylab="Qualidade de 
+  Vida", data=educ, pch=19, col=c("#961f1f",1,"#80ad7c"))
+```
+<br><br>
+Nesse gráfico, relacionam-se as variáveis qualidade de vida e gasto com educação. Nele é possível perceber pela inclinação da linha de quadrados mínimos a relação positiva forte entre as variáveis, ou seja, quanto maior os gastos em educação em um Estado, maior tende a ser sua qualidade de vida. Apesar dessa correlação expressiva, observa-se, através dos boxplots, que os gastos em educação ainda são poucos para sua relevância; tendo como quarto quartil gastos de até pouco mais de 5 milhões. Uma exceção de destaque é o outlier que chega a gastar mais de 30 milhões em educação. Com relação ao boxplot de qualidade de vida, as informações de 50 a 100%, isto é, a partir da mediana, apresentam-se bem espalhadas; o que, provavelmente, deve-se a influência de outros fatores sobre essa variável, os quais não são pertinentes a este estudo em específico.
+<br><br>
+<u>Teste de Normalidade</u><br>
+
+- Gasto com Educação:<br>
+```{r}
+with(educ, Hist(Gasto.com.Educação, scale="frequency", breaks="Sturges", 
+  col=c("#ff93e6","#ce0075")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Gasto.com.Educação))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0
+<br><br>
+<b> => </b>Rejeita H0: a distribuição <b>NÃO</b> é normal.
+<br><br>
+- Qualidade de Vida<br>
+```{r}
+with(educ, Hist(Qualidade.de.Vida, scale="frequency", breaks="Sturges", 
+  col=c("#8cd856","#204c00")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Qualidade.de.Vida))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Rejeita H0: a distribuição <b>NÃO</b> é normal.
+<br><br>
+<u>Teste de Hipóteses: Teste de Correlação de Spearman</u><br>
+```{r}
+with(educ, cor.test(Gasto.com.Educação, Qualidade.de.Vida, alternative="two.sided", 
+  method="spearman"))
+```
+H0: p=0 => são independentes<br>
+H1: p diferente de 0 => há correlação<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeito H0<br>
+<br><br>
+<b> => </b>Rejeita H0: 1ª hipótese confirmada! De fato Estados com maior gasto em educação têm maior qualidade de vida.
+<br><br>
+2ª hipótese: “Estados com maior média de anos de estudo possuem maior renda per capita.”<br>
+<u>Gráfico</u>
+
+```{r}
+scatterplot(Renda.per.capita~Média.de.Anos.de.Estudos, reg.line=lm, smooth=FALSE, 
+  spread=FALSE, boxplots='xy', span=0.5, ellipse=FALSE, levels=c(.5, .9), data=educ, 
+  pch=19, col=c("red",1,"#efab00"))
+```
+<br><br>
+A partir da linha de quadrados mínimos, observa-se que há uma correlação positiva mediana entre as variáveis. Isto é, quanto maior a média de anos de estudos de um indivíduo, maior tende a ser sua renda per capita. Ainda percebe-se que a mediana da média de anos de estudos está por volta de 6,2 anos - tempo este que somente seria suficiente para a conclusão do primeiro segmento do ensino fundamental.E o fato do terceiro quartil dessa mesma variável encontrar-se ainda abaixo dos 7 anos, explica 75% dos Estados apresentarem renda per capita abaixo de dois salários mínimos (que em 2016 era R$880,00), visto que essas variáveis se correlacionam.<br>
+<br><br>
+<u>Teste de Normalidade</u><br>
+
+- Média de Anos de Estudos<br>
+```{r}
+with(educ, Hist(Média.de.Anos.de.Estudos, scale="frequency", breaks="Sturges", 
+  col=c("#004c30","#a2ecf9")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão possua uma distribuição normal, pois seu formato assemelha-se ao de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Média.de.Anos.de.Estudos))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+- Renda per capita<br>
+```{r}
+with(educ, Hist(Renda.per.capita, scale="frequency", breaks="Sturges", 
+  col=c("#fca337","#f4ec4e")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Renda.per.capita))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Rejeita H0: a distribuição <b>NÃO</b> é normal.
+<br><br>
+<u>Teste de Hipóteses: Teste de Correlação de Spearman</u><br>
+```{r}
+with(educ, cor.test(Média.de.Anos.de.Estudos, Renda.per.capita, 
+  alternative="two.sided", method="spearman"))
+```
+H0: p=0 => são independentes<br>
+H1: p diferente de 0 => há correlação<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeito H0<br>
+<br><br>
+<b> => </b>Rejeita H0: 2ª hipótese confirmada! De fato Estados com maior média de anos de estudo possuem maior renda per capita.
+<br><br>
+3ª hipótese: “Estados com notas maiores no ideb possuem menor taxa de criminalidade.”<br>
+<u>Gráfico</u>
+
+```{r}
+scatterplot(Criminalidade~Ideb..3ª.série.EM., reg.line=lm, smooth=FALSE, 
+  spread=FALSE, boxplots='xy', span=0.5, ellipse=FALSE, levels=c(.5, .9), data=educ, 
+  pch=19, col=c("red",1,"#f79460"))
+```
+<br><br>
+Ao analisar a linha de quadrados mínimos, nota-se que há uma correlação negativa forte entre as variáveis. Isto é, quanto maior a nota do ideb, menor será a taxa de criminalidade. Assim, pode-se concluir que o resultado do ideb interfere na segurança, pois, onde a educação básica é melhor, os jovens tendem a serem menos suscetíveis à sedução da vida criminosa e tendem a apresentar ética e moral, fatores fornecidos pela educação básica, mais fortes.<br>
+<br><br>
+<u>Teste de Normalidade</u><br>
+
+- Ideb<br>
+
+```{r}
+with(educ, Hist(Ideb..3ª.série.EM., scale="frequency", breaks="Sturges", 
+  col=c("#b86dff","#290051")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Ideb..3ª.série.EM.))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+- Criminalidade<br>
+```{r}
+with(educ, Hist(Criminalidade, scale="frequency", breaks="Sturges", col=c("#ffffff","#c9c7c7")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão possua uma distribuição normal, pois seu formato assemelha-se ao de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Criminalidade))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+<u>Teste de Hipóteses: Teste de Correlação de Pearson</u><br>
+```{r}
+with(educ, cor.test(Criminalidade, Ideb..3ª.série.EM., alternative="two.sided", 
+  method="pearson"))
+```
+H0: p=0 => são independentes<br>
+H1: p diferente de 0 => há correlação<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeito H0<br>
+<br><br>
+<b> => </b>Rejeita H0: 3ªhipótese confirmada! De fato Estados com maiores no ideb possuem menor taxa de criminalidade.
+<br><br>
+<br><b>4.2 Variáveis que afetam a qualidade da educação básica no Brasil</b><br>
+<br><br>
+1ª hipótese: “Estados que gastam mais com educação possuem melhores oportunidades educacionais e menor taxa de evasão no Ensino Médio.”<br>
+<u>Estatística</u>
+
+```{r}
+require(corrplot)
+```
+
+```{r}
+M <- cor(educ[,c("Gasto.com.Educação","IOEB","Taxa.de.Evasão.do.EM")])
+```
+
+
+```{r}
+corrplot.mixed(M)
+```
+<br><br>
+Essa estatística, a matriz de correlação, permite relacionar mais de duas variáveis, assim pode-se ver quais variáveis tendem a sofrer influência do gasto com a educação. Esta variável correlacona-se positivamente com o ioeb, visto que apresenta um coefiente de correlação igual a 0,53. Embora positiva, essa correlação é de caráter mediano.<br>
+No que se refere à taxa de evasão do EM, a relação é irrelevante, representada por um número bem próximo a zero e sendo enfatizada pela coloração extremamente clara.<br>
+Por fim, relacionando o ioeb e a taxa de evasão, a correlação não só está presente, como é negativa e forte. Isto é, quanto maior a nota de ioeb de um Estado, menor será a taxa de evasão do EM.<br>
+<br><br>
+<u>Teste de Normalidade</u><br>
+
+- Gasto com Educação<br>
+```{r}
+with(educ, Hist(Gasto.com.Educação, scale="frequency", breaks="Sturges", 
+  col=c("#ff93e6","#ce0075")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Gasto.com.Educação))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Rejeita H0: a distribuição <b>NÃO</b> é normal.
+<br><br>
+- IOEB
+```{r}
+with(educ, Hist(IOEB, scale="frequency", breaks="Sturges", col=c("#a2b1f9","#000f5b")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão possua uma distribuição normal, pois seu formato assemelha-se ao de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(IOEB))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+- Taxa de Evasão do EM<br>
+```{r}
+with(educ, Hist(Taxa.de.Evasão.do.EM, scale="frequency", breaks="Sturges", 
+  col=c("#ed7d7d","#d81a1a")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão possua uma distribuição normal, pois seu formato assemelha-se ao de um sino.<br>
+<br><br>
+
+```{r}
+with(educ, shapiro.test(Taxa.de.Evasão.do.EM))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+<u>Teste de Hipóteses: Teste de Correlação de Spearman</u><br>
+
+```{r}
+with(educ, cor.test(Gasto.com.Educação, IOEB, alternative="two.sided", 
+  method="spearman"))
+```
+H0: p=0 => são independentes<br>
+H1: p diferente de 0 => há correlação<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeito H0<br>
+<br><br>
+<b> => </b>Rejeita H0
+<br><br>
+```{r}
+with(educ, cor.test(Gasto.com.Educação, Taxa.de.Evasão.do.EM, 
+  alternative="two.sided", method="spearman"))
+```
+<br><br>
+<b> => </b>Não rejeita H0: as variáveis são independentes.
+<br><br>
+```{r}
+with(educ, cor.test(IOEB, Taxa.de.Evasão.do.EM, alternative="two.sided", 
+  method="spearman"))
+```
+<br><br>
+<b> => </b>Rejeita H0
+<br><br>
+<b> => </b>1ª hipótese parcialmente confirmada: há correlação entre gasto com educação e IOEB, mas não há correlação entre gato com educação e taxa de evasão no ensino médio. Também confirmada a correlação entre IOEB e taxa de evasão.
+<br><br>
+2ª hipótese: “Estados com mais escolas têm maior ideb.”<br>
+<u>Gráfico</u>
+
+```{r}
+scatterplot(Ideb..3ª.série.EM.~Escolas, reg.line=lm, smooth=FALSE, spread=FALSE, 
+  boxplots='xy', span=0.5, ellipse=FALSE, levels=c(.5, .9), data=educ, pch=19, 
+  col=c("red",1,"#609dc4"))
+```
+<br><br>
+A partir desse diagrama de dispersão, a relação entre o número de escolas com o ideb aparenta existir, apesar de fraquíssima, ou seja, o aumento de escolas acarretaria no aumento da nota do ideb. Porém, tendo em vista que os pontos do diagrama apresentam-se muito dispersos, é provável que ao realizar o teste de hipótese correspondente a essas variáveis, a correlação seja rejeitada.<br>
+<br><br>
+<u>Teste de Normalidade</u><br>
+- Escolas
+```{r}
+with(educ, Hist(Escolas, scale="frequency", breaks="Sturges", col=c("#e8788d","#99001c")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Escolas))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Rejeita H0: a distribuição <b>NÃO</b> é normal.
+<br><br>
+- Ideb
+
+```{r}
+with(educ, Hist(Ideb..3ª.série.EM., scale="frequency", breaks="Sturges", 
+  col=c("#b86dff","#290051")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão não possui uma distribuição normal, pois seu formato é diferente do de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Ideb..3ª.série.EM.))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+<u>Teste de Hipóteses: Teste de Correlação de Spearman</u><br>
+
+```{r}
+with(educ, cor.test(Escolas, Ideb..3ª.série.EM., alternative="two.sided", 
+  method="spearman"))
+```
+H0: p=0 => são independentes<br>
+H1: p diferente de 0 => há correlação<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeito H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: 2ª hipóstese rejeitada! O número de escolas em um Estado não influência na sua nota no ideb.
+<br><br>
+3ª hipótese: “Estados com maior ioeb possuem maior média de anos de estudos.”<br>
+<u>Gráfico</u>
+
+```{r}
+scatterplot(Média.de.Anos.de.Estudos~IOEB, reg.line=lm, smooth=FALSE, spread=FALSE, 
+  boxplots='xy', span=0.5, ellipse=FALSE, levels=c(.5, .9), data=educ,pch=19, 
+  col=c("red",1,"#91399b"))
+```
+<br><br>
+Nesse gráfico, relaciona-se a média de anos de estudos com o ioeb, e é possível concluir que uma interfere na outra de maneira positiva. No entanto, essa relação é fraca, visto que a inclinação da linha de quadrados mínimos não é tão expressiva. Entretanto, ainda se pode dizer que a mediana da média de anos de estudos ser baixa é pela correlação com a baixa mediana do ioeb (cerca de 4,2), sendo assim, tal relação ainda é interessante ao pensar-se em uma política pública acerca da educação básica.<br>
+<br><br>
+<u>Teste de Normalidade</u><br>
+- IOEB<br>
+```{r}
+with(educ, Hist(IOEB, scale="frequency", breaks="Sturges", col=c("#a2b1f9","#000f5b")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão possua uma distribuição normal, pois seu formato assemelha-se ao de um sino.<br>
+<br><br>
+
+```{r}
+with(educ, shapiro.test(IOEB))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+- Média de Anos de Estudos
+```{r}
+with(educ, Hist(Média.de.Anos.de.Estudos, scale="frequency", breaks="Sturges", 
+  col=c("#004c30","#a2ecf9")))
+```
+<br><br>
+Com base nesse histograma, pode-se esperar que a variável em questão possua uma distribuição normal, pois seu formato assemelha-se ao de um sino.<br>
+<br><br>
+```{r}
+with(educ, shapiro.test(Média.de.Anos.de.Estudos))
+```
+H0: a distribuição é normal<br>
+H1: a distribuição não é normal<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeita H0<br>
+<br><br>
+<b> => </b>Não rejeita H0: a distribuição <b>É</b> normal.
+<br><br>
+<u>Teste de Hipóteses: Teste de Correlação de Pearson</u><br>
+```{r}
+with(educ, cor.test(IOEB, Média.de.Anos.de.Estudos, alternative="two.sided", 
+  method="pearson"))
+```
+H0: p=0 => são independentes<br>
+H1: p diferente de 0 => há correlação<br>
+alfa=0,05<br>
+p-valor menor ou igual a alfa => rejeita-se H0<br>
+p-valor > alfa => não se rejeito H0<br>
+<br><br>
+<b> => </b>Rejeita H0: 3ª hipótese confirmada! De fato Estados com maior ioeb possuem maior média de anos de estudos.
+<br><br>
+<br><b>5. Conclusão</b><br>
+<br><br>
+Com a primeira parte da análise, foi comprovada a importância da educação ao evidenciar que seu impacto se extende para além de seu campo de atuação. Essa pode afetar a segurança (análise feita considerando a taxa de criminalidade), a economia do Estado (análise feita considerando a renda per capita) e a qualidade de vida. Logo, esclarece-se que a educação básica é de tamanha relevância que pode ser considerada a chave para o desenvolvimento de um Estado ou do país como um todo.<br>
+Em um segunto momento, é possível perceber que a qualidade da educação (expressa através do ideb e ioeb) é influenciada diretamente pelo montante investido nela. Isso já mostra o aspecto prejudicial da PEC que congela os gastos em educação nos próximos vinte anos. Essa medida, que a princípio serviria para amenizar a crise econômica brasileira, a longo prazo trará mais prejuízos, pois influenciará na qualidade de vida para pior do Brasil como um todo.<br>
+Por outro lado, o número de escolas, que parece sempre ser a variável-alvo de políticas públicas brasileiras, não possui qualquer relação com a qualidade da educação básica. Isso, possivelmente, porque grande parte das escolas não se encontram em funcionamento.<br>
+Portanto, fica visível que a República Federativa do Brasil segue com planejamentos precários frente à educação. Então, o que seria ideal de se fazer?<br>
+Não podendo deixar de lado a PEC 241, em vigor, os gastos não podem ser aumentados, mas deveriam ser maximizados, não diminuídos como ocorre constantemente. Trabalhando com a verba máxima, essa deverá ser redirecionada: cortando desperdícios e a direcionando para aumento de oportunidades educacionais. Para ainda ficar mais claro, tais oportunidades seriam a presença de internet em todas as escolas - o que facilitaria os estudos -; a construção de bibliotecas (já que, até 2014, 65% das escolas não possuíam uma) e existência de atividades extracurriculares, seja na arte ou no esporte, por exemplo.<br>
+Dessa maneira, o desenvolvimento da educação será possível mesmo com as barreiras legais atuais brasileiras.<br>
+<br><br>
+<br><b>6. Referências bibliográficas</b><br>
+<br><br>
+<u>Folha OUL:</u><br>
+http://www1.folha.uol.com.br/mercado/2017/02/1861675-20-estados-tiveram-renda-per-capita-abaixo-da-media-em-2016-diz-ibge.shtml<br>
+http://www1.folha.uol.com.br/mercado/2017/07/1905463-previdencia-de-servidores-supera-despesa-com-educacao-em-16-estados.shtml<br>
+<br><br>
+<u>Inep:</u><br>
+http://ideb.inep.gov.br/resultado/resultado/resultado.seam?cid=377527<br>
+http://inepdata.inep.gov.br/analytics/saw.dll?Dashboard<br>
+<br><br>
+<u>O Globo:</u><br>
+http://infograficos.oglobo.globo.com/brasil/numeros-crescentes.html<br>
+https://oglobo.globo.com/sociedade/educacao/censo-65-das-escolas-brasileiras-nao-tem-biblioteca-12594751<br>
+<br><br>
+<u>G1:</u><br>
+https://g1.globo.com/educacao/noticia/abandono-no-ensino-medio-alcanca-11-do-total-de-alunos-apontam-dados-do-censo-escolar.ghtml<br>
+<br><br>
+<u>Exame:</u><br>
+https://exame.abril.com.br/brasil/os-estados-com-a-melhor-e-a-pior-condicao-de-vida-no-brasil/<br>
+<br><br>
+<u>Ioeb:</u><br>
+http://www.ioeb.org.br/ranking<br>
+
