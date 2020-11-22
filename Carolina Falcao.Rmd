@@ -1,0 +1,272 @@
+---
+title: "Covid-19 (Artigo Final)"
+author: "Carolina Falcão"
+date: "15/10/2020"
+output: 
+  html_document:
+    theme: cerulean
+    highlight: tango
+    toc: true
+    toc_float: true
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      comment = NA)
+options(digits = 2)
+```
+
+# Índice 
+
+1.	Introdução
+2.	Contextualização
+3.	Objetivo 
+4.	Área de estudo 
+5.	Metodologia
+5.1.	Base de dados
+6.	Análise de dados
+7.  Testes de hipóteses 
+8.	Resultados 
+9.	Conclusão
+10.	Bibliografia
+
+# Palavras-chaves
+
+Covid-19, número de casos, óbitos e pandemia.
+
+# 1.	Introdução
+
+Os primeiros casos da doença COVID-19 surgiram em Wuhan, uma cidade de 11 milhões de pessoas na província chinesa de Hubei, no final de 2019. Causada pelo vírus de RNA de fita simples SARS-CoV-2, em geral essa doença é autolimitada e não causa complicações na maioria dos infectados, porém, em alguns casos, pode resultar em morte devido a danos alveolares maciços e insuficiência respiratória progressiva. Alguns estudos revelaram uma taxa de mortalidade de 2 a 3,4 %, podendo chegar a 10% em pacientes com idade avançada e comorbidades prévias.
+No início do surto, todos os casos estavam relacionados a um mercado de frutos do mar e animais vivos, também em Wuhan. Nos primeiros 30 dias, a China registrou 11.821 casos e 259 óbitos. Ainda em janeiro, a doença foi registrada em outros países da Ásia, Europa e América do Norte.6 Em 30 de janeiro de 2020, a Organização Mundial da Saúde (OMS) declarou Emergência em Saúde Pública de Importância Internacional (ESPII). Em um cenário com mais de 110 mil casos distribuídos em 114 países, a OMS decretou a pandemia no dia 11 de março de 2020.
+As pessoas com COVID-19 podem apresentar tosse, dificuldade para respirar, dores de garganta, febre e outras manifestações clínicas. Há ainda os portadores assintomáticos, os quais possuem importância epidemiológica, dado que são potenciais transmissores. O SARS-CoV-2 apresenta o número básico de reprodução (R0) alto quando comparado a outros coronavírus, chegando a 6,49 na província de Hubei.
+A experiência da China mostrou que intervenções não farmacológicas, que incluem diversas formas de distanciamento social, desde o isolamento de casos e contatos, até o bloqueio total (lockdown), podem conter a epidemia. No entanto, a aplicabilidade dessas estratégias se dá de diferentes formas entre os diversos países. As dificuldades na adoção dessas medidas podem ajudar a explicar o registro, no mundo, no dia 16 de maio de 2020, de 4.425.485 casos de COVID-19, com 302.059 óbitos, sendo as Américas o continente mais atingido, seguido da Europa.
+No Brasil, os primeiros casos foram confirmados no mês de fevereiro, e diversas ações foram implementadas a fim de conter e de mitigar o avanço da doença. Em 3 de fevereiro de 2020, o país declarou Emergência de Saúde Pública de Importância Nacional (ESPIN), antes mesmo da confirmação do primeiro caso. A consolidação dos dados sobre casos e óbitos por COVID-19, coletados e disponibilizados pelas Secretarias Estaduais de Saúde, vem sendo realizada desde o início da pandemia pelo Ministério da Saúde brasileiro. Isso permite o conhecimento da dinâmica da doença no país e, consequentemente, o estabelecimento de políticas para desacelerar o incremento no número de casos.
+
+![](https://1.bp.blogspot.com/-3YW-nZ3ymkA/XrhMgp_h-3I/AAAAAAAAD0o/g7FoU-OTQMYfel73fp3pjMYee7kzW2VRACPcBGAYYCw/w640/COVID-19.gif)
+
+# 2.	Contextualização
+
+Após surgir na cidade chinesa, o coronavírus se espalhou pelo mundo causando uma das maiores pandemias da história, afetando até o momento 196 países, com 416.686 casos e 18.589 mortes, segundo dados da Organização Mundial da Saúde.
+O SARS-CoV2 apresenta menor taxa de mortalidade em relação a outros patógenos responsáveis por outros surtos em larga escala, como a SARS (Síndrome Respiratória Aguda Grave), MERS (Síndrome Respiratória do Oriente Médio) e Ebola.
+No entanto, o COVID-19 levou cerca de menos de dois meses a partir da descoberta da primeira infecção para que o número de casos confirmados ultrapassasse o total atingido pela SARS ao longo de vários meses. Em três meses, o COVID-19 matou mais de cinco vezes mais pessoas que o SARS. Uma das explicações para esse fenômeno é que, embora tenha baixa mortalidade, a infecção pelo SARS-CoV-2 se espalha mais facilmente que outras doenças. Estima-se que uma pessoa infectada pode transmitir o vírus para até 2,5 pessoas.
+
+# 3.	 Objetivo
+
+O presente trabalho tem por objetivo avaliar a situação do COVID no Brasil.
+
+Objetivo específico:
+•	Avaliar a quantidade de casos de COVID no Brasil ao longo dos dias;
+•	Avaliar a quantidade de óbitos no Brasil ao longo dos dias;
+•	Avaliar a porcentagem de óbitos no Brasil;
+•	Comparar o número de casos existentes em cada região; e 
+•	Comparar o número de óbitos existentes em cada região.
+ 
+# 4.	Área de estudo 
+
+Serão analisados dados do Brasil por região. 
+
+# 5.	Metodologia
+
+Estudo ecológico baseado em dados e documentos do Ministério da Saúde brasileiro e órgãos internacionais; foram realizadas comparações do Brasil entre as regiões.
+
+Inicialmente, foram carregadas 6 bases de dados, presentes no Studio (COVID19, geobr, sf, tmap, coronabr e ggplot2). 
+
+Primeiramente, foram elaborados gráfico de barras do número de casos e número de óbitos ao longo do tempo. 
+
+Foram elaborados mapas do Brasil, divididos por estados, contendo a quantidade de casos e óbitos visando facilitar a visualização dos dados apresentados.
+
+Por fim, foram feitos testes de hipóteses.
+
+## 5.1.	Base de dados 
+
+A base de dados utilizada, conforme orientação do professor, encontra-se dentro do próprio R, por ser um assunto atual e ainda muito estudado.
+
+# 6.	Análise de dados 
+
+Abaixo, teremos a apresentação de dois mapas com a situação dos casos de Covid e óbito pelo Brasil.
+
+```{r,message=FALSE, warning=FALSE, comment=NA}
+library(COVID19)
+library(geobr)
+library(sf)
+library(tmap)
+library(coronabr)
+library(ggplot2)
+
+dados_covid_br = get_corona_br(by_uf = TRUE)
+
+library(dplyr)
+dados_covid_br <-dados_covid_br %>%
+  mutate(
+    regiao = case_when(
+      state == "SP" ~ "SUDESTE",
+      state == "RJ" ~ "SUDESTE",
+      state == "ES" ~ "SUDESTE",
+      state == "MG" ~ "SUDESTE",
+      state == "PR" ~ "SUL",
+      state == "RS" ~ "SUL",
+      state == "SC" ~ "SUL",
+      state == "BA" ~ "NORDESTE", 
+      state == "AL" ~ "NORDESTE",
+      state == "CE" ~ "NORDESTE",
+      state == "MA" ~ "NORDESTE",
+      state == "PB" ~ "NORDESTE",
+      state == "PE" ~ "NORDESTE",
+      state == "PI" ~ "NORDESTE",
+      state == "RN" ~ "NORDESTE",
+      state == "SE" ~ "NORDESTE",
+      state == "AC" ~ "NORTE",
+      state == "AP" ~ "NORTE",
+      state == "AM" ~ "NORTE",
+      state == "PA" ~ "NORTE",
+      state == "RO" ~ "NORTE",
+      state == "RR" ~ "NORTE",
+      state == "TO" ~ "NORTE",
+      state == "DF" ~ "CENTRO OESTE",
+      state == "GO" ~ "CENTRO OESTE",
+      state == "MS" ~ "CENTRO OESTE",
+      state == "MT" ~ "CENTRO OESTE",
+      TRUE ~ "OUTROS"
+))
+```
+
+Abaixo analisaremos a quantidade de casos confirmados e óbitos no Brasil.
+
+```{r}
+ggplot(dados_covid_br) +
+ aes(x = date, y = new_confirmed) +
+ geom_line(size = 1L, colour = "#0c4c8a") +
+ theme_minimal()
+
+ggplot(dados_covid_br) +
+ aes(x = date, y = new_deaths) +
+ geom_line(size = 1L, colour = "#0c4c8a") +
+ theme_minimal()
+
+```
+
+Abaixo analisaremos o número de casos e óbitos por estado.
+
+```{r}
+#at = format_corona_br(dados)
+
+# proporcao de casos por 100k 
+dados_format = dados_covid_br %>%
+  group_by(state) %>%
+  summarise(casos=n())
+
+dados_format_pop = dados_covid_br %>%
+  group_by(state) %>%
+  summarise(populacao=max(estimated_population_2019))
+
+dados <- dados_format %>% left_join(dados_format_pop)  
+
+dados$taxa <- (dados$casos/dados$populacao)*100000 
+dados$taxa <- round(dados$taxa,3)
+
+library(geobr)
+mapa <-read_state(code_state="all", year=2010)
+
+dados$abbrev_state<-dados$state
+mapa_covid <- merge(mapa,dados, by = 'abbrev_state')
+
+# fazendo o merge dos dados e shapefile
+plot(mapa_covid)
+
+library(leaflet)
+# taxa por 100 mil habitantes
+leaflet(mapa_covid) %>%
+  addTiles() %>%
+  addPolygons(color = "#444444", weight = 1, smoothFactor= 0.5,
+              opacity = 1.0, fillOpacity = 0.5,
+              fillColor = ~colorQuantile("YlOrRd", taxa)(taxa),
+              highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                  bringToFront = TRUE))
+
+# casos totais
+leaflet(mapa_covid) %>%
+  addTiles() %>%
+  addPolygons(color = "#444444", weight = 1, smoothFactor= 0.5,
+              opacity = 1.0, fillOpacity = 0.5,
+              fillColor = ~colorQuantile("Blues", casos)(casos),
+              highlightOptions = highlightOptions(color = "white", weight = 2,
+                                                  bringToFront = TRUE))
+```
+
+Foram analisadas duas variáveis, qualitativa e quantitativa, e elaborados gráficos boxplot para visualização da relação entre os dados.
+
+A primeira análise foi com as variáveis Região e número de casos.
+
+```{r}
+#Manipulação de dados
+dados_covid_br$regiao<-as.factor(dados_covid_br$regiao)
+
+#Construção de gráfico tipo boxplot
+boxplot(new_confirmed~regiao, data=dados_covid_br, col=c("red","#faa005","#1bc704","#0f8efc","yellow"), main="Bloxpot 1 \  número de casos por Região \n")
+```
+
+Foi possível observar que todas as regiões possuem outliers. A região sul foi a única região em que o número de casos foi simétrico. Em geral, as regiões possuem pequena amplitude interquartil, apenas a região sul possuem uma amplitude maior, por ser a região mais populosa. 
+
+A segunda análise foi com as variáveis Região e número de óbitos.
+
+```{r}
+#Manipulação de dados
+dados_covid_br$regiao<-as.factor(dados_covid_br$regiao)
+
+#Construção de gráfico tipo boxplot
+boxplot(new_deaths~regiao, data=dados_covid_br, col=c("red","#faa005","#1bc704","#0f8efc","yellow"), main="Bloxpot 2 \  número de óbitos por Região \n")
+```
+
+Foi possível observar que todas as regiões possuem outliers. A região centro-oeste foi a única região em que o número de óbitos foi simétrico. Em geral, as regiões possuem pequena amplitude interquartil, apenas a região sul possuem uma amplitude maior, por ser a região mais populosa. 
+
+# 7.	Teste de hipóteses 
+
+Foram executados testes de hipóteses para avaliar se a variável categórica região interfere na variável quantitativa número de casos. Foi adotado alpha=0,05 para todos os testes realizados. Dessa forma, a regra de decisão foi definida como:
+
+Se pvalor ≤ alpha, rejeita H0.
+Se pvalor > alpha, não rejeita H0.
+
+O primeiro teste de hipóteses realizado com as variáveis teve como objetivo a verificação do pressuposto de normalidade, por meio do teste de Anderson-Darling, o qual parte do pressuposto de que as observações são independentes e apresenta as seguintes hipóteses:
+
+H0: os dados seguem uma distribuição normal.
+H1: os dados não seguem uma distribuição normal.
+
+Após a verificação do pressuposto de normalidade, executou-se, para os dados que não seguem distribuição normal, o teste de Kruskal-Wallis com as hipóteses:
+
+H0: os grupos são amostrados de populações com distribuições idênticas.
+H1: os grupos são amostrados de populações com diferentes distribuições.
+
+```{r}
+shapiro.test(dados$taxa)
+library(nortest)
+# Anderson-Darling test for normality
+ad.test(dados_covid_br$new_confirmed)
+
+# kruscal.test + serie temporal
+kruskal.test(dados_covid_br$new_confirmed~dados_covid_br$regiao)
+```
+
+Como pvalor < 0.05, a hipótese nula H0 é rejeitada. Portanto, os grupos são amostrados de populações com diferentes distribuições, ou seja, a quantidade de casos e óbitos não possui distribuição semelhante entre todas as regiões. 
+
+# 8.	Resultados 
+
+O número de casos iniciou em março de 2020, teve seu máximo em agosto e encontra-se em queda.  
+Já o número de mortes iniciou com 3 no início de março, atingiu seu máximo no início de agosto e encontra-se em queda. 
+
+A taxa de covid a cada 100mil habitantes foi alta nos seguintes estados: Tocantis, Acre, Roraima, Rondônia, Amapá e Sergipe. Os estados que apresentaram menores taxas foram: Pernambuco, Bahia, Minas, Rio de Janeiro, São Paulo, Paraná e Rio Grande do Sul.   
+A região sudeste apresentou o maior índice de casos de covid, seguido da região nordeste, região sul, centro-oeste e norte.  
+
+# 9.	Conclusão 
+
+O Brasil apresentou muitos casos de covid, consequentemente muitos óbitos, espalhados por todos os estados, principalmente os da região sudeste, por ser os estados mais populosos. 
+Até a presente data, houveram muitos casos de covid pelo Brasil e pelo mundo. Os casos encontram-se em queda desde outubro, porém em alguns países está ocorrendo a segunda onda do Covid, portanto vale ressaltar que a população precisa continuar adotando as medidas de combate ao vírus que matou diversas pessoas ao redor do Brasil e do mundo, tais como o uso de máscara, alcool em gel e evitar aglomerações.
+
+# 10.	Bibliografia
+https://www.sanarmed.com/covid-19 - Acesso em: 13outubro 2020.
+
+COVID-19 no Brasil: evolução da epidemia até a semana epidemiológica 20 de 2020
+
+https://scielosp.org/article/ress/2020.v29n4/e2020376/pt/
