@@ -13,8 +13,17 @@ View(nomes_e_links_rpubs)
 nomes_e_links_rpubs<-nomes_e_links_rpubs[nomes_e_links_rpubs$link!="Sem registro",]
 nomes_e_links_rpubs<-na.omit(nomes_e_links_rpubs)
 
-SEQ  <- seq(1,33)
-pb   <- txtProgressBar(1, 33, style=3)
+
+nomes_e_links_rpubs$Nome<-tolower(nomes_e_links_rpubs$Nome)
+
+# Convert First letter of every word to Uppercase in R
+library(stringr) 
+nomes_e_links_rpubs$Nome<-str_to_title(nomes_e_links_rpubs$Nome)  
+nomes_e_links_rpubs$Nome<-gsub("De","de",nomes_e_links_rpubs$Nome)
+
+
+SEQ  <- seq(1,17)
+pb   <- txtProgressBar(1, 17, style=3)
 dados<-c()
 #soh existe de menu 1 ate 9
 for(i in SEQ){
@@ -26,3 +35,4 @@ for(i in SEQ){
       </li>'
 )}
 
+dados
