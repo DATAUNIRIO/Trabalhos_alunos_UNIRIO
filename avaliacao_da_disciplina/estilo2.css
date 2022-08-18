@@ -343,32 +343,6 @@ html {
   place-self: end;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  gap: 20px;
-  font-family: system-ui, sans-serif;
-  font-size: 20px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
