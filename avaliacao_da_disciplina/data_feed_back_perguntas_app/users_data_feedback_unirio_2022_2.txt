@@ -1,0 +1,111 @@
+-----------------------------------------------------------------------
+   CIÊNCIA POLÍTICA E CIÊNCIAS SOCIAIS
+   JANEIRO DE 2022
+   DDos - lembrete de comentar o espaço
+-----------------------------------------------------------------------
+
+"Texto: Ótimo período e professor Conteúdo amplo e abrangente curso extremamente completo apesar de um período mais curto 
+Nota: 10 
+Sexo: Feminino
+Data: 25/01/2023/"
+
+"Texto: o curso foi bem planejado e bem feito 
+Nota: 9
+Sexo: Não desejo responder
+Data: 25/01/2023"
+
+"Texto: Antes de iniciar a aula de estatística confesso que tinha um pouco de medo por que muitas pessoas já haviam falado que a matéria era uma das mais difíceis. Apesar de ainda ter muitas dificuldades com o R posso dizer que as aulas foram boas não tive dificuldades em compreender o que era explicado e agradeço muito a paciência que o professor teve com a gente e seu alto astral que tornavam as aulas mais leves 
+Nota: 6 
+Sexo: Feminino
+Data: 25/01/2023"
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+-----------------------------------------------------------------------
+   ADMINISTRAÇÃO PÚBLICA E CIÊNCIAS SOCIAIS
+   JANEIRO DE 2022
+-----------------------------------------------------------------------
+Texto:  O curso é muito bom, acho que o trabalho final poderia ser feito de um modo diferente, fora isso o curso é perfeito. Gostaria de ter visto mais python.
+Nota:9
+Sexo: Feminino
+Data: 26/01/2023 08:22:37"
+"
+Texto:  Gostei bastante do curso, uns dos meus favoritos nesse semestre, consegui aprender bastante. Porém gostaria que tivesse tido mais ênfase em como realizar os testes de hipóteses, tratando cada um dos casos com maior detalhe.
+Nota:9
+Sexo: Masculino
+Data: 26/01/2023 09:11:07"
+"
+Texto:  Gostei muito das aulas, o professor era bem humorado e conseguia passar bem o conteúdo
+Nota:10
+Sexo: Masculino
+Data: 26/01/2023 10:37:17"
+"
+ 
+Texto:  Bem, ainda é bem difícil compreender tudo que diz respeito a disciplina. Acho que seria mais fácil de sermos avaliados se as avaliações fossem vistas logo após das postagens, sei que foi complicado esse período pela quantidade de pessoas. Acho também que dinâmicas em conjunto, trabalhos e avaliações conjuntas podendo postar trabalhos juntos que fossem pensados em conjunto. E mais tempo para a analisar as nossas dúvidas fora do discord porque é, de fato, uma plataforma complicada para expor dúvidas exclusivas para com o professor. No todo, foi proveitoso o curso e espero levar os conhecimentos para minha formação. :)
+Nota:5
+Sexo: Feminino
+Data: 26/01/2023 10:41:35"
+"
+-----------------------------------------------------------------------
+
+
+ 
+Texto:  Eu gostei muito da disciplina apesar de ser a mais difícil que fiz no curso até o momento. Professor explica muito bem e é muito atencioso. A minha única reclamação seria que as vezes a aula é meio corrida, portanto difícil de acompanhar. Mas de forma geral superou as minhas expectativas. 
+  Nota:10
+ Sexo: Feminino
+  Data: 26/01/2023 19:03:39"
+"
+ 
+ ------------------------------Texto: Aprendi muito sobre formulação de gráficos e maneiras de analisá-los, tive um pouquinho de dificuldade em entender a distribuição normal e os cálculos, por fim, gostaria de ter aprendido como fazer mapas de um parlamento. Sobretudo, entendo que a matéria estatística em si não é algo fácil para alunos de humanas, mas acredito que sem sua paciência e atenção seria bem pior. Muito obrigada, aprendi muito e tenho certeza que o conteúdo será extremamente útil em minha vida profissional e acadêmica. 
+  Nota:10
+ Sexo: Feminino
+  Data: 26/01/2023 19:06:44"
+"
+ 
+
+ ------------------------------Texto:  Oi professor, bom dia, a experiência da sua aula foi uma caixinha de surpresa. Ao longo do período achei as aulas muito cansativas e bem difíceis, e foi agravado pela quantidade de alunos, sinto que se tivessem menos , você teria oportunidade de auxiliar mais outros alunos. Outro agravante foi a situação dos computadores do laboratório, com aulas e difíceis e cansativas, não poder estar nos fazendo as arividades nos computadores piorou.
+  Nota:5
+ Sexo: Feminino
+  Data: 26/01/2023 19:53:49"
+"
+
+ ------------------------------Texto: A disciplina é muito bem dirigida pelo professor, achei que seria mais difícil, porém, ao decorrer das aulas descobri diversas facilidades que o R pode oferecer. Em geral achei tudo bem tranquilo e bem didático, só senti falta de uma introdução/aula de como escrever as análises. 
+  Nota:8
+ Sexo: Feminino
+  Data: 26/01/2023 22:51:59"
+"
+ ------------------------------Texto:  Ótimo curso, acredito que para o pessoal de humanas seria mais fluido exemplos mais “fáceis” 
+  Nota:8
+ Sexo: Não desejo responder
+  Data: 27/01/2023 06:58:46"
+"
+ ------------------------------Texto:  Sinto falta de uma introdução para a materia, começamos direto no programa, o tempo sempre muito corrido, sem poder voltar muito as esplicações, talvez muito conteúdo para um semestre, e muitas atividades
+  Nota:5
+ Sexo: Não desejo responder
+  Data: 27/01/2023 12:58:57"
+"
+ 
+ ------------------------------Texto:  Sinto falta de uma introdução para a matéria, começamos direto no programa, o tempo sempre muito corrido, sem poder voltar muito as explicações, talvez muito conteúdo para um semestre, e muitas atividades
+  Nota:5
+ Sexo: Não desejo responder
+  Data: 27/01/2023 13:08:05"
+
+ ------------------------------Texto:  Muito boa a aula, apesar do curto tempo para o aprendizado em escala.
+  Nota:9
+ Sexo: Masculino
+  Data: 28/01/2023 16:03:40"
+"
+
+ ------------------------------Texto:  O conteudo foi transmitido de forma satisfatoria, com explicações acessíveis, uma aula ou outra achei que havia conteudo demais e demandaria ter sido desmembrado com uma aula com conteudos menores. Entrei na disciplina sem me lembrar de muitas coisas da matematica e saio entendendo as operações e utilizando o R de forma bem razoável. As aulas foram excelentes, só não pontuei em 10, por conta da observação acima e também, porque acharia interessante o aluno ser medido no seu desempenho no meio do curso, como as demais disciplinas, até para uma auto-correção à tempo antes da avalição derradeira. 
+  Nota:9
+ Sexo: Feminino
+  Data: 31/01/2023 15:34:26"
+"
+ ------------------------------Texto:  Aprendi bastante coisa em relação a análise de dados como o tratamento, limpeza, interpretação e visualização dos dados com gráficos, tabelas e etc. Além disso, aprendi conceitos de estatística como testes de hipótese, modelos de regressão linear e etc. Gostaria de ter aprendido mais sobre Machine Learning mas acredito que a matéria cumpre bem seu papel dando ao aluno uma ótima formação e com diversos recursos.
+  Nota:10
+ Sexo: Masculino
+  Data: 31/01/2023 18:09:52"
+"
+
+ ------------------------------Texto:  Gostei muito do curso de estatista, deu pra aprender cada vez mais em cada aula e o professor sempre foi bem solicito em cada dúvida que a turma tinha. Nada a reclamar 
+  Nota:10
+ Sexo: Feminino
+  Data: 01/02/2023 10:51:43"
