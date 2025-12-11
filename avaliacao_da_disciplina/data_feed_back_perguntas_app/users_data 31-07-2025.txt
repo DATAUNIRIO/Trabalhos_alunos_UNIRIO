@@ -1,0 +1,86 @@
+-----------------------------------------------------------------------
+   JANEIRO DE 2025
+   DDos - lembrete de comentar o espaço
+-----------------------------------------------------------------------
+"
+ 
+ ------------------------------------------------------
+ Texto:  Aprendi o básico da programação no R, as metodologias  utilizadas para fazer os trabalhos e como interpretar os resultados gerados pelos gráficos e pelos testes. Tive dificuldade em fazer alguns códigos funcionarem, nem mesmo o chat gpt me ajudava a resolver, mas fora isso o curso foi muito tranquilo e eficaz. Gostaria de me aprofundar mais nesse mundo de programação, é uma área muito legal que eu gostaria muito de dar continuidade no meu aprendizado. Só não dou nota dez, pq o senhor disse que ninguém tira dez na sua matéria kkkkk
+  Nota:9
+ Sexo: Feminino
+  Data: 13/02/2025 23:00:23"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Aprendi o básico da programação no R, as metodologias  utilizadas para fazer os trabalhos e como interpretar os resultados gerados pelos gráficos e pelos testes. Tive dificuldade em fazer alguns códigos funcionarem, nem mesmo o chat gpt me ajudava a resolver, mas fora isso o curso foi muito tranquilo e eficaz. Gostaria de me aprofundar mais nesse mundo de programação, é uma área muito legal que eu gostaria muito de dar continuidade no meu aprendizado. Só não dou nota dez, pq o senhor disse que ninguém tira dez na sua matéria kkkkk
+  Nota:9
+ Sexo: Feminino
+  Data: 13/02/2025 23:01:07"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Olá, professor, gostaria de elogiar a forma que você conduziu a disciplina! Fui acompanhando as aulas com o livro de estatística que você sugeriu e gostei bastante da parte matemática, mas reconheço que as avaliações da forma que você fazia eram bem melhores do que testar nosso conhecimento nessa parte. Não tive dificuldade particularmente em nada, mas demorei pra entender o conceito da distribuição normal e sua tabela. Gostaria de ter aprendido mais sobre como fazer aqueles mapas geográficos no python. Aqui é a aluna Ana C Moraes, abraços.
+  Nota:10
+ Sexo: Feminino
+  Data: 30/07/2025 08:38:42"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Olá, professor, gostaria de elogiar a forma que você conduziu a disciplina! Fui acompanhando as aulas com o livro de estatística que você sugeriu e gostei bastante da parte matemática, mas reconheço que as avaliações da forma que você fazia eram bem melhores do que testar nosso conhecimento nessa parte. Não tive dificuldade particularmente em nada, mas demorei pra entender o conceito da distribuição normal e sua tabela. Gostaria de ter aprendido mais sobre como fazer aqueles mapas geográficos no python. Aqui é a aluna Ana C Moraes, abraços.
+  Nota:10
+ Sexo: Feminino
+  Data: 30/07/2025 08:38:46"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Gostei bastante da aula de estatística aprendi muito tanto com a parte de análise de dados na filtragem dos dados como trabalhar com os dados mesmo. Foi uma das matérias que mais gostei, me abriu diversas portas principalmente minha curiosidade para automação com o Python e daí parti para automação com make, automate…
+O desenvolvimento das aulas e matérias é bem estruturado, fazer os código junto com o professor da um ar de que estamos conseguindo absorver, do mesmo modo que ainda sim é preciso chegar em casa e fazer um estudo a mais. O trabalho final custou não só muito tempo, dedicação como levou a desentendimento com colegas de grupo mas que no geral me fez evoluir MUITO. Aprenderia a mexer no R também se tivesse oportunidade, entre outros. Inclusive, graças a matéria estou implementando dentro da área de projetos do MP automatizações para estruturação da área. Enfim, muito bom!
+
+  Nota:10
+ Sexo: Não desejo responder
+  Data: 30/07/2025 10:12:53"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Gostei bastante da aula de estatística aprendi muito tanto com a parte de análise de dados na filtragem dos dados como trabalhar com os dados mesmo. Foi uma das matérias que mais gostei, me abriu diversas portas principalmente minha curiosidade para automação com o Python e daí parti para automação com make, automate…
+O desenvolvimento das aulas e matérias é bem estruturado, fazer os código junto com o professor da um ar de que estamos conseguindo absorver, do mesmo modo que ainda sim é preciso chegar em casa e fazer um estudo a mais. O trabalho final custou não só muito tempo, dedicação como levou a desentendimento com colegas de grupo mas que no geral me fez evoluir MUITO. Aprenderia a mexer no R também se tivesse oportunidade, entre outros. Inclusive, graças a matéria estou implementando dentro da área de projetos do MP automatizações para estruturação da área. Enfim, muito bom!
+
+  Nota:10
+ Sexo: Não desejo responder
+  Data: 30/07/2025 10:13:32"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Foi uma disciplina excelente com um professor excelente. Confesso que tive dificuldade em entender e pegar o ritmo da matéria, não tenho acesso a computador em casa e por isso não tenho o costume de mexer e treinar. Mesmo que tenha sido no final, conseguir entender a disciplina e achei muito legal fazer, já salvei as aulas e códigos no meu drive e com certeza irei rever novamente. Não tenho reclamações do professor, foi excelente e sempre focado no entendimento dos alunos, qualquer dúvida que o aluno tinha, o professor explicava pelo tempo que fosse (não são todos que são assim). Foi uma experiência muito boa e devo parabenizar o professor pela dedicação que teve com os alunos.
+  Nota:10
+ Sexo: Feminino
+  Data: 30/07/2025 12:09:06"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Foi uma disciplina excelente com um professor excelente. Confesso que tive dificuldade em entender e pegar o ritmo da matéria, não tenho acesso a computador em casa e por isso não tenho o costume de mexer e treinar. Mesmo que tenha sido no final, conseguir entender a disciplina e achei muito legal fazer, já salvei as aulas e códigos no meu drive e com certeza irei rever novamente. Não tenho reclamações do professor, foi excelente e sempre focado no entendimento dos alunos, qualquer dúvida que o aluno tinha, o professor explicava pelo tempo que fosse (não são todos que são assim). Foi uma experiência muito boa e devo parabenizar o professor pela dedicação que teve com os alunos.
+  Nota:10
+ Sexo: Feminino
+  Data: 30/07/2025 12:09:10"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Divonico sua metodologia, a turma não ajudava e o senhor sempre muito prestativo e compreensível, além de nos ensinar a mexer em ferramentas que fora do âmbito acadêmico nunca aprenderia de forma tão clara, e acima disso,a
+ a ajuda e insistência do professor para aprendermos a escrever melhor, como administradores, e em ler os códigos, sabendo transcreve-los foi muito didático, agradeço bastante e gostaria de ter outras matérias com o senhor.
+  Nota:10
+ Sexo: Feminino
+  Data: 30/07/2025 19:16:05"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Não aprendi tudo que deveria, mas algo aprendi. Tive dificuldade em muitas coisas. Professor excelente. Gente fina. 
+  Nota:9
+ Sexo: Masculino
+  Data: 30/07/2025 19:38:51"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Não aprendi tudo que deveria, mas algo aprendi. Tive dificuldade em muitas coisas. Professor excelente. Gente fina. 
+  Nota:9
+ Sexo: Masculino
+  Data: 30/07/2025 19:38:54"

@@ -1,0 +1,84 @@
+
+"
+ 
+ ------------------------------------------------------
+ Texto:  Ótimo curso. Achei muito interessante uma introdução ao Python. Cursei técnico em Adm e tive a disciplina de estatística onde executávamos exclusivamente no papel. Foi uma experiência bem bacana. Agradeço ao professor pelas aulas dinâmicas, bons exemplos e por estar sempre à disposição. Acredito que o curso de administração pública poderia disponibilizar mais disciplinas relacionadas a análise de dados ou pelo menos dispor de indicações para optativas em outros cursos.
+  Nota:10
+ Sexo: Masculino
+  Data: 01/08/2025 15:01:15"
+"
+ 
+ ------------------------------------------------------
+ Texto:  O senhor ajudou muito nossa jornada nessa aula, ensinando coisas que realmente ajudarão academicamente e profissionalmente, mesmo a turma de forma geral não colaborando sempre, o senhor sempre foi prestativo e gentil. Apesar de ser complicado de entender, foi possível compreender tudo que você ensinou. Obrigada pelas aulas desse período, o senhor foi incrível! 
+  Nota:9
+ Sexo: Feminino
+  Data: 02/08/2025 11:01:15"
+"
+ 
+ ------------------------------------------------------
+ Texto:  O senhor ajudou muito nossa jornada nessa aula, ensinando coisas que realmente ajudarão academicamente e profissionalmente, mesmo a turma de forma geral não colaborando sempre, o senhor sempre foi prestativo e gentil. Apesar de ser complicado de entender, foi possível compreender tudo que você ensinou. Obrigada pelas aulas desse período, o senhor foi incrível! 
+  Nota:9
+ Sexo: Feminino
+  Data: 02/08/2025 11:01:19"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Dificuldade nas últimas 3 aulas.
+A aula é boa, o senhor explica bem, o único problema é que as vezes já aprendemos o código mas não passou a passo de o que o código significa, como não somos da área as vezes podemos ficar perdidos.
+  Nota:9
+ Sexo: Feminino
+  Data: 03/08/2025 15:31:42"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Aprendi como funciona o python, o que é uma base de dados, o que se faz com ela e as formas de extrair dos números informações concretas que apoiem a tomada de decisão de um administrador. Gostaria de compartilhar que acharia ótimo mais uma disciplina de estatística, talvez como optativa para o curso de Administração Pública, que conversasse com disciplinas de Políticas Públicas/Política Comparada, ou até de análise de dados mesmo. Creio que agrega muito à nossa formação acadêmica e ajuda também na formação profissional.
+  Nota:10
+ Sexo: Feminino
+  Data: 05/08/2025 15:50:47"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Aprendi como funciona o python, o que é uma base de dados, o que se faz com ela e as formas de extrair dos números informações concretas que apoiem a tomada de decisão de um administrador. Gostaria de compartilhar que acharia ótimo mais uma disciplina de estatística, talvez como optativa para o curso de Administração Pública, que conversasse com disciplinas de Políticas Públicas/Política Comparada, ou até de análise de dados mesmo. Creio que agrega muito à nossa formação acadêmica e ajuda também na formação profissional.
+  Nota:10
+ Sexo: Feminino
+  Data: 05/08/2025 15:50:51"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Confesso que eu não fazia ideia do que seria estudar Estatística durante um semestre. O que é R? Python? Gráficos? Método qualitativo ou quantitativo? Como tudo isso vai entrar na minha cabeça?
+
+Lembro do slide \"Tudo vai dar errado.\" na apresentação da primeira aula . Fiquei impactada com aquilo - \"Como assim TUDO vai dar errado?\". E, de fato, muita coisa deu errado... do começo ao fim.
+
+O professor Steven foi a figura principal para que eu não desistisse no meio do caminho (ou até mesmo no início). Ao longo das aulas, fui percebendo que, na verdade, não era tão difícil assim (embora ele nunca tenha dito isso em sala - sempre dizia, sorrindo, que era MUITO fácil). 
+
+Professor, os seus ensinamentos foram essenciais. Admiro profundamente sua dedicação ao ensinar. É nítido que você gosta do que faz e, mais do que isso, sabe transmitir o conhecimento com leveza e clareza. 
+
+Inclusive, me interessei bastante por Python durante as aulas - algo que eu jamais imaginaria no início do semestre. Tanto que busquei um curso para me aprofundar mais na linguagem e explorar possibilidades.
+
+Sem sombra de dúvidas, é um professor que vou levar comigo para sempre. Minha eterna gratidão pelos aprendizados. 
+
+Abraços, 
+Maria Fernanda. 
+  Nota:10
+ Sexo: Feminino
+  Data: 05/08/2025 16:06:05"
+"
+ 
+ ------------------------------------------------------
+ Texto:  Confesso que eu não fazia ideia do que seria estudar Estatística durante um semestre. O que é R? Python? Gráficos? Método qualitativo ou quantitativo? Como tudo isso vai entrar na minha cabeça?
+
+Lembro do slide \"Tudo vai dar errado.\" na apresentação da primeira aula . Fiquei impactada com aquilo - \"Como assim TUDO vai dar errado?\". E, de fato, muita coisa deu errado... do começo ao fim.
+
+O professor Steven foi a figura principal para que eu não desistisse no meio do caminho (ou até mesmo no início). Ao longo das aulas, fui percebendo que, na verdade, não era tão difícil assim (embora ele nunca tenha dito isso em sala - sempre dizia, sorrindo, que era MUITO fácil). 
+
+Professor, os seus ensinamentos foram essenciais. Admiro profundamente sua dedicação ao ensinar. É nítido que você gosta do que faz e, mais do que isso, sabe transmitir o conhecimento com leveza e clareza. 
+
+Inclusive, me interessei bastante por Python durante as aulas - algo que eu jamais imaginaria no início do semestre. Tanto que busquei um curso para me aprofundar mais na linguagem e explorar possibilidades.
+
+Sem sombra de dúvidas, é um professor que vou levar comigo para sempre. Minha eterna gratidão pelos aprendizados. 
+
+Abraços, 
+Maria Fernanda. 
+  Nota:10
+ Sexo: Feminino
+  Data: 05/08/2025 16:06:11"
